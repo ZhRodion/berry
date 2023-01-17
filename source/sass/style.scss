@@ -4,4 +4,22 @@
 @import "global/fonts";
 
 /* BLOCKS */
-@import "blocks/header";
+// header
+@import "blocks/header/header";
+@import "blocks/header/main-nav";
+@import "blocks/header/nav-list";
+
+
+// hero
+@import "blocks/hero/advantages-list.scss";
+
+// catalog
+
+// news
+
+// contacts
+
+// map
+
+// footer
+@import "blocks/footer/page-footer";

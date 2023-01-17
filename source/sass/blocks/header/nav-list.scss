@@ -1,0 +1,6 @@
+// Кнопки навигации
+.nav-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
