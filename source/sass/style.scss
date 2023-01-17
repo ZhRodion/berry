@@ -1,0 +1,26 @@
+/* GLOBAL */
+@import "global/variables";
+@import "global/global";
+@import "global/fonts";
+
+/* BLOCKS */
+// header
+@import "blocks/header/header";
+@import "blocks/header/main-nav";
+@import "blocks/header/nav-list";
+
+
+// hero
+@import "blocks/hero/hero";
+@import "blocks/hero/advantages-list.scss";
+
+// catalog
+
+// news
+
+// contacts
+
+// map
+
+// footer
+@import "blocks/footer/page-footer";

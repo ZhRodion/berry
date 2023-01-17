@@ -1,0 +1,25 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+// Body
+.page {
+margin: 0;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+text-align: center;
+}
+
+// Отмена у <li> стандартных стилей
+li {
+list-style: none;
+}
+
+// Отмена подчеркивания <a>
+a {
+  text-decoration: none;
+}
+
+// Скрытые элементы
+.visually-hidden {
+visibility: hidden;
+}

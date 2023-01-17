@@ -1,0 +1,16 @@
+
+.hero {
+  @media (min-width: $tablet-width){
+    background-image: url("");
+    background-repeat: no-repeat;
+    height: 924px;
+
+
+  }
+  @media (min-width: $desktop-width){
+    background-image: url("");
+    background-repeat: no-repeat;
+    height: 800px;
+
+      }
+    }
