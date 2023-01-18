@@ -114,8 +114,15 @@ function watchFiles () {
   gulp.watch('source/sass/**/*.scss', gulp.series(processStyles));
   gulp.watch('source/js/script.js', gulp.series(processScripts));
   gulp.watch('source/*.html', gulp.series(processMarkup, reloadServer));
-  gulp.watch("app/*.html").on('change', browserSync.reload);
+ 
 }
+
+// Новый параметр
+// gulp.task('default', function () {
+//   livereload.listen();
+//   gulp.watch('./src/sass/*.scss', ['reload-css']);
+//   gulp.watch('./src/*.html', ['reload-html']);
+// });
 
 function compileProject (done) {
   gulp.parallel(
