@@ -1,14 +1,16 @@
 
 .hero {
   @media (min-width: $tablet-width){
-    background-image: url("");
+    background-image: url("../../../img/bg/hero-bg.jpg");
     background-repeat: no-repeat;
+    width: 100%;
     height: 924px;
     background-position: 50%;
   }
   @media (min-width: $desktop-width){
-    background-image: url("");
+    background-image: url("../../../img/bg/hero-bg.jpg");
     background-repeat: no-repeat;
+    width: 100%;
     height: 800px;
       }
     }

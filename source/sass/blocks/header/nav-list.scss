@@ -1,6 +1,13 @@
 // Кнопки навигации
 .nav-list {
+  padding: 32px 138px 152px 30px;
   @media (min-width: $tablet-width) {
-    display: flex;
+    padding: 0px;
   }
 }
+.nav-list__item:not(:last-child) {
+  padding-bottom: 32px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+   }
