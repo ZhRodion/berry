@@ -9,11 +9,17 @@
   <body class="page">
     <!-- Хэдер -->
     <header class="header">
-      <img class="header__logo" src="#" alt="логотип доставки ягод." />
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
+        <a class="main-nav__logo-link" href="/">
+          <img
+            class="main-nav__logo classic-logo"
+            src="./img/logos/logo-y.svg"
+            alt="логотип ягоды."
+          />
+        </a>
+        <a class="main-nav__brend-text" href="/">Ягода</a>
         <!-- Кнопка открыть/закрыть меню -->
-        <button class="main-nav__menu-button" type="button">
-          <svg aria-hidden="true" focusable="false"></svg>
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Закрыть меню / Открыть меню.</span>
         </button>
         <div class="main-nav__wrapper">
@@ -28,7 +34,7 @@
               <a class="main-nav__link" href="#">Контакты</a>
             </li>
             <li class="nav-list__item">
-              <a class="main-nav__link" href="#">Заказать</a>
+              <a class="main-nav__link" href="./order.html">Заказать</a>
             </li>
           </ul>
         </div>

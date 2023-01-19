@@ -30,3 +30,14 @@ a {
 .visually-hidden {
 visibility: hidden;
 }
+
+// Скрытый h1
+h1 .visually-hidden {
+display: block;
+margin: 0;
+}
+
+// Отменя обводки кнопок
+button {
+  border: 0;
+}

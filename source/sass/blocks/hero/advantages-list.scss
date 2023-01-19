@@ -1,0 +1,15 @@
+.advantages-list {
+  @media (min-width: $tablet-width) {
+    min-width: 532px;
+    min-height: 146px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.advantages-list__point {
+margin: 0;
+}

@@ -1,6 +1,7 @@
 main-nav {
 min-width: 320px;
 min-height: 68px;
+display: block;
 background-color: #F1F6FC;
 box-shadow: 0px 4px 4px rgba(88, 13, 101, 0.25);
  @media (min-width: $tablet-width) {
@@ -15,13 +16,32 @@ min-height: 104px;
   padding: 8px 0 8px 16px;
   float: left;
   @media (min-width: $tablet-width) {
-    width: 58px;
+    width: 60px;
     height: 60px;
-    padding: 0 0 22px 12px;
+    padding: 22px 0 22px 12px;
   }
   @media (min-width: $desktop-width) {
     padding: 24px 0 24px 146px;
   }
+  }
+  // Текст логотипа
+  .main-nav__brend-text {
+   display: none;
+   @media (min-width: $tablet-width) {
+    display: block;
+    width: 67px;
+    height: 50px;
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #0F805D;
+    margin: 0;
+    position: absolute;
+    top: 27px;
+    left: 92px;
+   }
   }
 // Кнопка меню
 .main-nav__toggle {
@@ -36,10 +56,10 @@ min-height: 104px;
   cursor: pointer;
   background-color: #F1F6FC;
 @media (min-width: $tablet-width) {
-  opacity: 0;
+  display: none;
   }
   @media (min-width: $desktop-width) {
-    opacity: 0;
+    display: none;
     }
 }
 
@@ -56,19 +76,7 @@ left: 7.5px;
 box-shadow: 0 5px 0 0#0f805d, 0 15px 0 0#0f805d, 0 25px 0 0 #0F805D;
 border-radius: 25px;
 }
-.main-nav--opened {
-  display: block;
-}
-// .main-nav--opened .main-nav__toggle {
-// &::before
-// &::after {
-// content:"";
-// position: absolute;
-// width: 35px;
-// height: 3px;
-// background-color:  #0f805d;
-// }
-// }
+
 // Меню
 .main-nav__wrapper {
 min-width: 320px;
@@ -77,10 +85,6 @@ display: flex;
 flex-direction: column;
 font-size: 20px;
 line-height: 23px;
-// Решение 50 - 50
-// position: relative;
-// top: 68px;
-// right: 65px;
 @media (min-width: $tablet-width) {
   min-width: 496px;
   min-height: 20px;
@@ -103,10 +107,9 @@ font-size: 20px;
 line-height: 23px;
 color: #000000;
 text-align: start;
+
+@media (min-width: $tablet-width) {
+min-width: 112px;
+min-height: 20px;
 }
-// Поведение меню для телефона
-@media (min-width: $mobile-width-only) {
-
 }
-
-

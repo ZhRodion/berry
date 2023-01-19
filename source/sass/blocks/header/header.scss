@@ -3,4 +3,8 @@
   padding: 0 10px 0 10px;
   background-color: #F1F6FC;;
   color: #000000;
+  @media (min-width: $tablet-width) {
+    min-width: 100%;
+    min-height: 104px;
+  }
 }
