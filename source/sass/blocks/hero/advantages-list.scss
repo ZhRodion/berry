@@ -2,14 +2,25 @@
   @media (min-width: $tablet-width) {
     min-width: 532px;
     min-height: 146px;
-    padding: 0;
+    padding: 48px 0 0 0;
     margin: 0;
+    float: right;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 19px;
   }
 }
 
 .advantages-list__point {
 margin: 0;
+}
+
+.advantages-list__subtitle {
+  @media (min-width: $tablet-width) {
+max-width: 532px;
+min-height: 32px;
+margin: 0;
+font-size: 18px;
+}
 }

@@ -1,14 +1,18 @@
 
 .hero {
+  min-width: 100%;
+  min-height: 640px;
   @media (min-width: $tablet-width){
-    background-image: url("../../../img/bg/hero-bg.jpg");
+    background-image: url("../../../img/bg/tablet-bg.jpg");
     background-repeat: no-repeat;
     width: 100%;
+    min-height: 924px;
   }
   @media (min-width: $desktop-width){
     background-image: url("../../../img/bg/hero-bg.jpg");
     background-repeat: no-repeat;
     width: 100%;
+    min-height: 800px;
       }
     }
 
@@ -17,7 +21,8 @@
 min-width: 532px;
 min-height: 52px;
 margin: 0;
-padding: 142px 22px 48px 214px;
+float: right;
+padding: 142px 22px 0 214px;
 font-family: 'Comfortaa';
 font-style: normal;
 font-weight: 400;
@@ -31,15 +36,23 @@ color: #0F805D;
   @media (min-width: $tablet-width) {
 min-width: 336px;
 min-height: 68px;
+margin: 68px 0 0 0;
 border-radius: 40px;
 background-color:#6A107A;
-color: #ffffff;
+color: #FBFCFE;
+font-weight: 400;
+font-size: 28px;
+line-height: 33px;
   }
   @media (min-width: $desktop-width) {
     min-width: 336px;
     min-height: 68px;
+    margin: 48px 0 0 0;
     border-radius: 40px;
     background-color:#6A107A;
-    color: #ffffff;
+    color: #FBFCFE;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
       }
 }
