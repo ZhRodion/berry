@@ -23,23 +23,20 @@
 min-width: 265px;
 min-height: 80px;
 margin: 0;
-padding: 68px 27px 0 28px;
+padding: 68px 27px 0 0;
 font-family: 'Comfortaa';
 font-style: normal;
 font-weight: 400;
 font-size: 36px;
 color: #0F805D;
-line-height: 40px;
+line-height: 1.11;
   @media (min-width:$tablet-width) {
 width: 532px;
 min-height: 52px;
 margin: 0;
 padding: 142px 0 0 214px;
-font-family: 'Comfortaa';
-font-style: normal;
-font-weight: 400;
 font-size: 48px;
-line-height: 54px;
+line-height: 1.12;
 color: #0F805D;
 }
 @media (min-width: $desktop-width) {
@@ -48,8 +45,7 @@ min-height: 58px;
 padding: 172px 0 0 540px;
 margin: 0;
 font-size: 52px;
-line-height: 58px;
-text-align: start;
+line-height: 1.11;
 }
 }
 
@@ -61,7 +57,7 @@ background-color: #6A107A;
 border-radius: 40px;
 color: #FBFCFE;
 font-size: 20px;
-line-height: 23px;
+line-height: 1.15;
 letter-spacing: 0.05em;
   @media (min-width: $tablet-width) {
 min-width: 336px;
@@ -72,7 +68,7 @@ background-color:#6A107A;
 color: #FBFCFE;
 font-weight: 400;
 font-size: 28px;
-line-height: 33px;
+line-height: 1.17;
   }
   @media (min-width: $desktop-width) {
     min-width: 336px;
@@ -83,6 +79,6 @@ line-height: 33px;
     color: #FBFCFE;
     font-weight: 400;
     font-size: 28px;
-    line-height: 33px;
+    line-height: 1.17;
       }
 }
