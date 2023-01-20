@@ -7,4 +7,8 @@
     min-width: 100%;
     min-height: 104px;
   }
+  @media (min-width: $desktop-width) {
+    min-width: 100%;
+    min-height: 108px;
+  }
 }

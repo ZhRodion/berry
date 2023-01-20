@@ -28,9 +28,9 @@ min-height: 104px;
   .main-nav__brend-text {
    display: none;
    @media (min-width: $tablet-width) {
-    display: block;
     width: 67px;
     height: 50px;
+    display: block;
     font-family: 'Amatic SC';
     font-style: normal;
     font-weight: 700;
@@ -41,6 +41,11 @@ min-height: 104px;
     position: absolute;
     top: 27px;
     left: 92px;
+    @media (min-width: $desktop-width) {
+      display: block;
+      left: 224px;
+      top: 29px;
+    }
    }
   }
 // Кнопка меню
