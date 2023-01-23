@@ -3,7 +3,7 @@ min-width: 320px;
 min-height: 68px;
 display: block;
 background-color: #F1F6FC;
-box-shadow: 0px 4px 4px rgba(88, 13, 101, 0.25);
+box-shadow: 4px 2px -2px rgb(88 13 101 / 25%);
  @media (min-width: $tablet-width) {
 min-width: 100%;
 min-height: 104px;
@@ -52,7 +52,7 @@ min-height: 104px;
 .main-nav__toggle {
   width: 60px;
   height: 60px;
-  margin: 4px 11px 4px 0;
+  margin: 4px 21px 4px 0;
   position: absolute;
   top: 1px;
   right: 11px;
@@ -84,7 +84,7 @@ border-radius: 25px;
 
 // Меню
 .main-nav__wrapper {
-min-width: 320px;
+max-width: 100%;
 min-height: 68px;
 display: flex;
 flex-direction: column;

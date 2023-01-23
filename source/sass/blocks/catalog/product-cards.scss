@@ -1,0 +1,67 @@
+// Сетка товаров
+.product-cards {
+  min-width: 100%;
+  min-height: 2816px;
+  margin: 64px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+// Карточка
+.product-cards__item {
+min-width: 264px;
+min-height: 432px;
+background: #FBFCFE;
+border-radius: 40px;
+filter: drop-shadow(0px 4px 4px rgba(88, 13, 101, 0.15));
+}
+.product-cards__photo{
+  min-width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.product-cards__title {
+min-width: 184px;
+min-height: 32px;
+margin: 0;
+padding-top: 28px;
+display: inline-block;
+font-size: 28px;
+line-height: 1.17;
+color: #0F805D;
+}
+// Обнуление всех margin у <p>
+.product-cards p {
+  margin: 0;
+}
+// Выравнивание значений
+.price-value {
+  max-width: 100%;
+  min-height: 20px;
+  padding-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+// Кнопка каталога
+.product-cards__button {
+  min-width: 220px;
+  min-height: 52px;
+  margin: 38px 0 54px 0;
+  border-radius: 40px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  color: #FBFCFE;
+  background-color: #6A107A;
+  cursor: pointer;
+  }
+// Скрываю 2 последних карточки согласно макету
+@media (max-width: $mobile-width-only) {
+.mobile-out {
+display: none;
+}
+}
