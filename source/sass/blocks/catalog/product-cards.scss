@@ -13,11 +13,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
-    gap: 35px;
+    gap: 52px;
   }
   @media (min-width: $desktop-width) {
-    justify-content: center;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 52px;
   }
 }
 // Карточка
@@ -27,8 +27,8 @@ max-height: 432px;
 background: #FBFCFE;
 border-radius: 40px;
 filter: drop-shadow(0px 4px 4px rgba(88, 13, 101, 0.15));
-@media (min-width: $tablet-width) {
-
+@media (min-width: $desktop-width) {
+  width: 22.5%;
 }
 }
 .product-cards__photo{
