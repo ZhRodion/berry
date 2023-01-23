@@ -20,7 +20,7 @@
     }
 
 .hero__title {
-max-width: 265px;
+max-width: 100%;
 min-height: 80px;
 margin: 0;
 padding: 0;
@@ -35,7 +35,7 @@ line-height: 1.11;
 width: 532px;
 min-height: 52px;
 margin: 0;
-padding: 142px 0 0 214px;
+padding: 0;
 font-size: 48px;
 line-height: 1.12;
 color: #0F805D;
@@ -43,7 +43,7 @@ color: #0F805D;
 @media (min-width: $desktop-width) {
 width: 549px;
 min-height: 58px;
-padding: 172px 0 0 540px;
+padding: 0;
 margin: 0;
 font-size: 52px;
 line-height: 1.11;
@@ -96,4 +96,8 @@ background-color:#6A107A;
   flex-direction: column;
   align-items: center;
   gap: 32px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
 }

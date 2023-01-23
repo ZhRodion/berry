@@ -1,10 +1,11 @@
 .header {
   min-width: 100%;
   padding: 0;
-  background-color: #F1F6FC;;
+  background-color: #F1F6FC;
   color: #000000;
+  padding: 0 21px 0 26px;
   @media (min-width: $tablet-width) {
-    min-width: 100%;
+    max-width: 100%;
     min-height: 104px;
   }
   @media (min-width: $desktop-width) {

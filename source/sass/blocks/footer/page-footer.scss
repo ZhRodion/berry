@@ -1,7 +1,10 @@
 .page-footer {
   max-width: 100%;
   min-height: 116px;
+  padding: 0 26px 0 26px;
   display: flex;
   background: #F1F6FC;
-
+}
+.page-footer__logo {
+  padding: 11px 0 0 0;
 }
