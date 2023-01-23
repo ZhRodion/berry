@@ -1,0 +1,53 @@
+// Блок новости
+.news-list {
+  max-width: 100%;
+  min-height: 1248px;
+  padding: 0;
+  margin: 65px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+// Новость
+.news-list__item {
+max-width: 100%;
+min-height: 400px;
+padding: 20px;
+background-color: #FBFCFE;
+border: 2px solid #0F805D;
+border-radius: 40px;
+}
+// Обнуление стандартных margin у текста
+.news-list__item h3 {
+  margin: 0;
+}
+.news-list__item p {
+  margin: 0;
+}
+.news-list__title {
+max-width: 100%;
+min-height: 68px;
+padding: 12px 12px 0  12px;
+display: inline-block;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+}
+.news-list__subtitle {
+min-width: 100%;
+min-height: 208px;
+padding: 20px 0 0 0;
+text-align: start;
+font-size: 14px;
+line-height: 1.14;
+}
+.news-list__date {
+  padding: 12px 0 0 0;
+  text-align: end;
+}
+// Текстовое поле карточки общие параметры контейнера
+.text-area {
+min-width: 100%;
+min-height: 208px;
+}

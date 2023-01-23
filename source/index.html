@@ -67,7 +67,7 @@
       </section>
       <!-- Каталог -->
       <section class="catalog">
-        <h2 class="catalog__title">Каталог</h2>
+        <h2 class="catalog__title classic-section-titles">Каталог</h2>
         <!-- Карточки товаров -->
         <ul class="product-cards">
           <li class="product-cards__item">
@@ -166,7 +166,7 @@
               src="./img/products/blueberry.jpg"
               alt=""
             />
-            <h1 class="product-cards__title">Голубика</h1>
+            <h3 class="product-cards__title">Голубика</h3>
             <div class="price-value">
               <p class="product-cards__price">510 ₽</p>
               <p class="product-cards__weight">за 1 кг</p>
@@ -181,7 +181,7 @@
               src="./img/products/cranberry.jpg"
               alt=""
             />
-            <h1 class="product-cards__title">Клюква</h1>
+            <h3 class="product-cards__title">Клюква</h3>
             <div class="price-value">
               <p class="product-cards__price">320 ₽</p>
               <p class="product-cards__weight">за 1 кг</p>
@@ -195,43 +195,52 @@
       <!-- Новостной блок -->
       <section class="news">
         <h2 class="visually-hidden">Новости</h2>
-        <b class="news__lead-text">Что новенького?</b>
+        <b class="news__lead-text classic-section-title">Что новенького?</b>
         <ul class="news-list">
           <li class="news-list__item">
-            <p class="news-list__title">Новый урожай клубники</p>
-            <p class="news-list__subtitle">
-              К нам поступила свежая сочная ароматная клубника из Алтайского
-              края. Крупные отборные ягоды можно приобрести свежими от 200 гр,
-              или замороженными от 1 кг. Поторопитесь, сезон клубники короткий и
-              свежие ягоды скоро закончатся.
-            </p>
-            <p class="news-list__date"></p>
+            <h3 class="news-list__title">Новый урожай клубники</h3>
+            <div class="text-area">
+              <p class="news-list__subtitle">
+                К нам поступила свежая сочная ароматная клубника из Алтайского
+                края. Крупные отборные ягоды можно приобрести свежими от 200 гр,
+                или замороженными от 1 кг. Поторопитесь, сезон клубники короткий
+                и свежие ягоды скоро закончатся.
+              </p>
+              <p class="news-list__date">22 июня 2022</p>
+            </div>
           </li>
           <li class="news-list__item">
-            <p class="news-list__title">
+            <h3 class="news-list__title">
               В июне дарим скидку 15% на все свежие ягоды
-            </p>
-            <p class="news-list__subtitle">
-              Свежие ягоды урожая этого года со скидкой 15%. Клубнику, малину,
-              голубику, вишню доставим от 200 гр.
-            </p>
-            <p class="news-list__date">15 июня 2022</p>
+            </h3>
+            <div class="text-area">
+              <p class="news-list__subtitle">
+                Свежие ягоды урожая этого года со скидкой 15%. Клубнику, малину,
+                голубику, вишню доставим от 200 гр.
+              </p>
+              <p class="news-list__date">15 июня 2022</p>
+            </div>
           </li>
           <li class="news-list__item">
-            <p class="news-list__title">Микс из ягод</p>
-            <p class="news-list__subtitle">
-              Мы приготовим для вас смеси из различных замороженных ягод по
-              вашему пожеланию. Ягодные смеси удобно использовать для
-              приготовления напитков. Все ягоды замораживаются методом шоковой
-              заморозки, что позволяет сохранить их естественный вкус и аромат.
-            </p>
-            <p class="news-list__date">02 июня 2022</p>
+            <h3 class="news-list__title">Микс из ягод</h3>
+            <div class="text-area">
+              <p class="news-list__subtitle">
+                Мы приготовим для вас смеси из различных замороженных ягод по
+                вашему пожеланию. Ягодные смеси удобно использовать для
+                приготовления напитков. Все ягоды замораживаются методом шоковой
+                заморозки, что позволяет сохранить их естественный вкус и
+                аромат.
+              </p>
+              <p class="news-list__date">02 июня 2022</p>
+            </div>
           </li>
         </ul>
       </section>
       <!-- Контакты -->
       <section class="contacts">
-        <h2 class="contacts__title">Где забрать ягоды?</h2>
+        <h2 class="contacts__title classic-section-titles">
+          Где забрать ягоды?
+        </h2>
         <p class="contacts__subtitle">
           Забери ягоды с нашего склада по адресу:
         </p>
@@ -252,9 +261,20 @@
             >
           </li>
         </ul>
+        <!-- Карта -->
+        <div class="map">
+          <iframe
+            class="map-site"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.132520538084!2d30.329035316388882!3d59.91334798186702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTAwMTM!5e0!3m2!1sru!2sge!4v1674477268450!5m2!1sru!2sge"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
-      <!-- Карта -->
-      <div class="map"></div>
     </main>
     <!-- Футер -->
     <footer class="page-footer">

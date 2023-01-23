@@ -2,12 +2,12 @@
 // Body
 .page {
 margin: 0;
-padding: 0 26px 0 26px;
 box-sizing: border-box;
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 400;
 text-align: center;
+padding: 0 26px 0 26px;
 }
 
 // Стили логотипа ягоды
@@ -41,4 +41,14 @@ margin: 0;
 // Отменя обводки кнопок
 button {
   border: 0;
+}
+
+// Мобильный h2 section
+.classic-section-titles {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #0f805d;
 }

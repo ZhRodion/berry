@@ -1,3 +1,22 @@
+.contacts-info {
+max-width: 100%;
+min-height: 120px;
+margin: 0;
+padding: 34px 0 0 0;
+text-align: start;
+line-height: 1.14;
+}
+// Отступы между элементами
+.contacts-info__item:not(:first-child) {
+padding: 12px 0 0 0;
+}
+.contacts-info a {
+  color: #000000;
+}
+.contacts-info__adress {
+padding: 0;
+margin: 0;
+}
 .contacts-info__phone {
   cursor: pointer;
 }
