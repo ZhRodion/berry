@@ -16,7 +16,6 @@ justify-content: center;
 gap: 20px;
   }
   @media (min-width: $desktop-width) {
-   gap: 22px;
   }
 }
 // Новость
@@ -28,12 +27,12 @@ background-color: #FBFCFE;
 border: 2px solid #0F805D;
 border-radius: 40px;
 @media (min-width: $tablet-width) {
-  max-width: 30%;
+  max-width: 33%;
   max-height: 494px;
   padding: 32px;
 }
 @media (min-width: $desktop-width) {
-  max-width: 22%;
+  max-width: 26%;
 }
 }
 // Обнуление стандартных margin у текста
