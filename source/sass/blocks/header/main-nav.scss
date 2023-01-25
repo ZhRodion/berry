@@ -13,7 +13,7 @@ box-shadow: 4px 2px -2px rgb(88 13 101 / 25%);
 @media (min-width: $desktop-width) {
   display: flex;
   align-items: center;
-  gap: calc(35% + 5px);
+  gap: calc(40% + 5px);
 }
 }
 // Logo
@@ -23,10 +23,10 @@ box-shadow: 4px 2px -2px rgb(88 13 101 / 25%);
   padding: 8px 0 8px 16px;
   float: left;
   @media (min-width: $tablet-width) {
-    padding: 22px 0 22px 12px;
+    padding: 22px 0 22px 0;
   }
   @media (min-width: $desktop-width) {
-    padding: 22px 0 22px 12px;
+    padding: 22px 0 22px 0;
   }
   }
   // Текст логотипа

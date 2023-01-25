@@ -8,12 +8,9 @@
 @import "blocks/header/header";
 @import "blocks/header/main-nav";
 @import "blocks/header/nav-list";
-
-
 // hero
 @import "blocks/hero/hero";
 @import "blocks/hero/advantages-list.scss";
-
 // catalog
 @import "blocks/catalog/catalog.scss";
 @import "blocks/catalog/product-cards.scss";
@@ -27,3 +24,17 @@
 @import "blocks/map/map.scss";
 // footer
 @import "blocks/footer/page-footer";
+
+// Order
+// headline
+@import "blocks/headline/headline.scss";
+// order-form
+@import "blocks/order-form/order-form.scss";
+// choose-berry
+@import "blocks/choose-berry/choose-berry.scss";
+// storage-type
+@import "blocks/storage-type/storage-type.scss";
+// delivery
+@import "blocks/delivery/delivery.scss";
+// your-contacts
+@import "blocks/your-contacts/your-contacts.scss";

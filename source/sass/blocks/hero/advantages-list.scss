@@ -1,9 +1,11 @@
 .advantages-list {
-  max-width: 208px;
+  max-width: 100%;
   min-height: 164px;
   margin: 0;
   padding: 0;
   text-align: start;
+  display: flex;
+  flex-direction: column;
   @media (min-width: $tablet-width) {
     max-width: 100%;
     min-height: 146px;
@@ -20,16 +22,17 @@ padding: 0;
 }
 
 .advantages-list__point {
-width: 164px;
+min-width: 100%;
 min-height: 20px;
 margin: 0;
-align-items: flex-start;
+// align-items: flex-start;
 }
 
 .advantages-list__subtitle {
   margin: 0;
+  padding: 0;
   @media (min-width: $tablet-width) {
-width: 100%;
+min-width: 100%;
 min-height: 24px;
 margin: 0;
 font-size: 18px;
@@ -37,6 +40,3 @@ line-height: 1.22;
 }
 }
 
-.advantages-list__subtitle {
-  padding:  0 0 12px 0;
-}

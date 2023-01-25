@@ -9,21 +9,23 @@
   <body class="page">
     <!-- Хэдер -->
     <header class="header">
-      <nav class="main-nav main-nav--nojs">
-        <a class="main-nav__logo-link" href="/">
-          <img
-            class="main-nav__logo classic-logo"
-            src="./img/logos/logo-y.svg"
-            alt="логотип ягоды."
-          />
-        </a>
-        <a class="main-nav__brend-text" href="/">Ягода</a>
+      <nav class="main-nav">
+        <div class="logo-group">
+          <a class="main-nav__logo-link" href="/">
+            <img
+              class="main-nav__logo classic-logo"
+              src="./img/logos/logo-y.svg"
+              alt="логотип ягоды."
+            />
+          </a>
+          <a class="main-nav__brend-text" href="/">Ягода</a>
+        </div>
         <!-- Кнопка открыть/закрыть меню -->
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Закрыть меню / Открыть меню.</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="nav-list">
+          <ul class="nav-list nav-list--closed">
             <li class="nav-list__item">
               <a class="main-nav__link" href="#">Каталог</a>
             </li>
@@ -40,7 +42,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <!-- Hero v2 -->
       <section class="headline">
         <h1 class="headline__title">Закажи ягоды</h1>
@@ -87,6 +89,7 @@
           </p>
         </fieldset>
         <!-- Выбор вида хранения -->
+        <h3 class="order-form__title">Вид хранения<h3>
         <fieldset class="storage-type">
           <p class="storage-type__description">
             <input class="storage-type__check" type="checkbox" /> свежие ягоды
@@ -100,6 +103,7 @@
           </p>
         </fieldset>
         <!-- Выбор доставки (радиокнопки)-->
+        <h3 class="order-form__title">Способ доставки<h3>
         <fieldset class="delivery">
           <p class="delivery__check">
             <input class="delivery__adress" type="radio" checked /> Доставка (по
@@ -160,36 +164,56 @@
       </section>
       <!-- Контакты -->
       <section class="contacts">
-        <h2 class="contacts__title">Где забрать ягоды?</h2>
-        <p class="contacts__subtitle">
-          Забери ягоды с нашего склада по адресу:
-        </p>
-        <ul class="contacts-info">
-          <li class="contacts-info__item">
-            <p class="contacts-info__adress">
-              Набережная Обводного канала, 101
-            </p>
-          </li>
-          <li class="contacts-info__item">
-            <a class="contacts-info__phone" href="tel:+79105244118"
-              >+ 7 910 524 41 18</a
-            >
-          </li>
-          <li class="contacts-info__item">
-            <a class="contacts-info__mail" href="mailto:info@yagoda.ru"
-              >info@yagoda.ru</a
-            >
-          </li>
-        </ul>
-        <button class="contacts__button" type="button">Заказать</button>
+        <div class="contacts-container">
+          <h2 class="contacts__title classic-section-titles">
+            Где забрать <br />
+            ягоды?
+          </h2>
+          <p class="contacts__subtitle">
+            Забери ягоды с нашего склада по адресу:
+          </p>
+          <ul class="contacts-info">
+            <li class="contacts-info__item">
+              <p class="contacts-info__adress">
+                Набережная Обводного канала, 101
+              </p>
+            </li>
+            <li class="contacts-info__item">
+              <a class="contacts-info__phone" href="tel:+79105244118"
+                >+ 7 910 524 41 18</a
+              >
+            </li>
+            <li class="contacts-info__item">
+              <a class="contacts-info__mail" href="mailto:info@yagoda.ru"
+                >info@yagoda.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Карта -->
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.132520538084!2d30.329035316388882!3d59.91334798186702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTAwMTM!5e0!3m2!1sru!2sge!4v1674477268450!5m2!1sru!2sge"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
-      <!-- Карта -->
-      <div class="map"></div>
     </main>
     <!-- Футер -->
     <footer class="page-footer">
       <!-- Логотип ягоды -->
-      <a class="page-footer__berry-logo" href="/"></a>
+      <a class="page-footer__berry-logo" href="/">
+        <img
+          class="page-footer__logo classic-logo"
+          src="./img/logos/logo-y.svg"
+          alt="логотип ягоды."
+        />
+      </a>
       <!-- Соц. сети -->
       <ul class="social-media-list">
         <li class="social-media-list__item">
@@ -205,7 +229,7 @@
       <!-- Логотип академии -->
       <a
         class="page-footer__academy-logo"
-        src="https://htmlacademy.ru/intensive/adaptive"
+        href="https://htmlacademy.ru/intensive/adaptive"
       ></a>
     </footer>
     <script href="./js/script.js" defer></script>

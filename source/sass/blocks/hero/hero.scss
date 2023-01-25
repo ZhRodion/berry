@@ -3,18 +3,19 @@
   background-image: url("../../../img/bg/mobile-bg.jpg");
   background-repeat: no-repeat;
   // background-size: cover;
-  min-width: 100%;
+  max-width: 100%;
   min-height: 640px;
+  padding: 0 27px 0 27px;
   @media (min-width: $tablet-width){
     background-image: url("../../../img/bg/tablet-bg.jpg");
     background-repeat: no-repeat;
-    min-width: 100%;
+    max-width: 100%;
     min-height: 924px;
   }
   @media (min-width: $desktop-width){
     background-image: url("../../../img/bg/hero-bg.jpg");
     background-repeat: no-repeat;
-    min-width: 100%;
+    max-width: 100%;
     min-height: 800px;
       }
     }
@@ -32,28 +33,30 @@ font-size: 36px;
 color: #0F805D;
 line-height: 1.11;
   @media (min-width:$tablet-width) {
-width: 532px;
+max-width: 100%;
 min-height: 52px;
 margin: 0;
 padding: 0;
 font-size: 48px;
 line-height: 1.12;
 color: #0F805D;
+align-self: flex-start;
 }
 @media (min-width: $desktop-width) {
-width: 549px;
+max-width: 100%;
 min-height: 58px;
 padding: 0;
 margin: 0;
 font-size: 52px;
 line-height: 1.11;
+align-self: center;
 }
 }
 
 .hero__button {
 min-width: 264px;
 min-height: 56px;
-margin: 48px 0 0 0;
+margin: 0;
 border-radius: 40px;
 line-height: 1.15;
 letter-spacing: 0.05em;
@@ -63,12 +66,13 @@ font-weight: 400;
 font-size: 20px;
 line-height: 23px;
 color: #FBFCFE;
+align-self: flex-start;
 cursor: pointer;
 background-color: #6A107A;
   @media (min-width: $tablet-width) {
 min-width: 336px;
 min-height: 68px;
-margin: 50px 0 0 0;
+margin: 0;
 border-radius: 40px;
 font-weight: 400;
 font-size: 28px;
@@ -79,13 +83,14 @@ background-color:#6A107A;
   @media (min-width: $desktop-width) {
     min-width: 336px;
     min-height: 68px;
-    margin: 48px 0 0 0;
+    margin: 0;
     border-radius: 40px;
     background-color:#6A107A;
     color: #FBFCFE;
     font-weight: 400;
     font-size: 28px;
     line-height: 1.17;
+    align-self: center;
       }
 }
 .main-block {
@@ -97,7 +102,13 @@ background-color:#6A107A;
   align-items: center;
   gap: 32px;
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 142px 0 0 0;
     margin: 0;
+    float: right;
+    gap: 48px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 172px 0 0 0;
+    float: none;
   }
 }
