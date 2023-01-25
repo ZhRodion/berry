@@ -9,10 +9,65 @@ font-weight: 400;
 text-align: center;
 }
 
-// Стили логотипа ягоды
-.classic-logo {
-width: 52px;
-height: 52px;
+// Логотип h2
+.classic-logo-h2 {
+  max-width: 100%;
+  max-height: 100%;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #0F805D;
+  margin: 0;
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 1.12;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 52px;
+    line-height: 1.11;
+  }
+}
+// Логотип h3
+.classic-logo-h3 {
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #0F805D;
+  margin: 0;
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+  line-height: 1.17;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+// Логотип h1
+.classic-logo-h1 {
+  max-width: 100%;
+  max-height: 100%;
+font-family: 'Comfortaa';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 1.11;
+color: #0F805D;
+margin: 0;
+padding: 0;
+@media (min-width: $tablet-width) {
+  font-size: 52px;
+  line-height: 1.11;
+}
+@media (min-width: $tablet-width) {
+  font-size: 52px;
+  line-height: 1.11;
+}
 }
 
 // Плохая практика, но проект позволяет
@@ -40,16 +95,6 @@ margin: 0;
 // Отменя обводки кнопок
 button {
   border: 0;
-}
-
-// Мобильный h2 section
-.classic-section-titles {
-  font-family: "Comfortaa";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.11;
-  color: #0f805d;
 }
 
 // Кнопка общая

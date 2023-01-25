@@ -45,7 +45,7 @@
     <main class="main">
       <!-- Hero v2 -->
       <section class="headline">
-        <h1 class="headline__title">Закажи ягоды</h1>
+        <h1 class="headline__title classic-logo-h1">Закажи ягоды</h1>
         <p class="headline__subtitle">
           Мы соберем для вас ягоды и доставим их в удобном для вас виде -
           свежими или замороженными
@@ -54,7 +54,7 @@
       <!-- Форма заказа -->
       <section class="order-form">
         <h2 class="visually-hidden">Выбор ягод</h2>
-        <h3 class="order-form__title">Выберите ягоды</h3>
+        <h3 class="order-form__title classic-logo-h3">Выберите ягоды</h3>
         <!-- Выбор ягоды (чекбоксы) -->
         <fieldset class="choose-berry">
           <label class="choose-berry__description">
@@ -109,7 +109,7 @@
           </label>
         </fieldset>
         <!-- Выбор вида хранения -->
-        <h3 class="order-form__title">Вид хранения</h3>
+        <h3 class="order-form__title classic-logo-h3">Вид хранения</h3>
         <fieldset class="storage-type">
           <label class="storage-type__description">
             <input class="storage-type__check" type="checkbox" /> свежие ягоды
@@ -126,63 +126,86 @@
           </label>
         </fieldset>
         <!-- Выбор доставки (радиокнопки)-->
-        <h3 class="order-form__title">Способ доставки</h3>
+        <h3 class="order-form__title classic-logo-h3">Способ доставки</h3>
         <fieldset class="delivery">
-          <p class="delivery__check">
-            <input class="delivery__adress" type="radio" checked /> Доставка (по
-            СПБ в пределах КАД)
-          </p>
-          <p class="delivery__check">
-            <input class="delivery__adress" type="radio" /> Самовывоз
-            (Набережная Обводного канала, 101)
-          </p>
+          <label class="delivery__check">
+            <input class="delivery__adress" type="radio" checked /> Доставка
+            <br />
+            (по СПБ в пределах <br />
+            КАД)
+            <span class="delivery__radio"></span>
+          </label>
+          <label class="delivery__check">
+            <input class="delivery__adress" type="radio" /> Самовывоз <br />
+            (Набережная Обводного <br />
+            канала, 101)
+            <span class="delivery__radio"></span>
+          </label>
         </fieldset>
         <!-- Контакты покупателя -->
         <fieldset class="your-contacts">
+          <h3 class="your-contacts__title classic-logo classic-logo-h3">
+            Ваши контакты
+          </h3>
           <!-- Имя -->
-          <label class="your-contacts__desc">Имя *</label>
-          <input
-            type="text"
-            name="username"
-            placeholder="Как к вам обращаться?"
-            value=""
-            required
-          />
+          <label class="your-contacts__desc"
+            >Имя *
+            <input
+              class="your-contacts__user-data"
+              type="text"
+              name="username"
+              placeholder="Как к вам обращаться?"
+              value=""
+              required
+            />
+          </label>
           <!-- Телефон -->
-          <label class="your-contacts__desc">Телефон *</label>
-          <input
-            type="tel"
-            name="tel"
-            placeholder="+7 ххх ххх хх хх"
-            value=""
-            required
-          />
+          <label class="your-contacts__desc"
+            >Телефон *
+            <input
+              class="your-contacts__user-data"
+              type="tel"
+              name="tel"
+              placeholder="+7 ххх ххх хх хх"
+              value=""
+              required
+            />
+          </label>
           <!-- Email -->
-          <label class="your-contacts__desc">Email *</label>
-          <input
-            type="text"
-            name="email"
-            placeholder="Ваш email"
-            value=""
-            required
-          />
+          <label class="your-contacts__desc"
+            >Email *
+            <input
+              class="your-contacts__user-data"
+              type="text"
+              name="email"
+              placeholder="Ваш email"
+              value=""
+              required
+            />
+          </label>
           <!-- Адрес -->
-          <label class="your-contacts__desc">Адрес *</label>
-          <input
-            type="text"
-            name="adress"
-            placeholder="Адрес в Санкт-Петербурге"
-            value=""
-            required
-          />
+          <label class="your-contacts__desc"
+            >Адрес *
+            <input
+              class="your-contacts__user-data adress-data"
+              type="text"
+              name="adress"
+              placeholder="Адрес в Санкт-Петербурге"
+              value=""
+              required
+            />
+          </label>
           <!-- Пожелания -->
-          <label class="your-contacts__desc">Пожелания к заказу</label>
-          <input
-            type="text"
-            name="wishes"
-            placeholder="Чем мы можем вам помочь?"
-            value=""
-          />
+          <label class="your-contacts__desc"
+            >Пожелания к заказу
+            <input
+              class="your-contacts__user-data wishes-data"
+              type="text"
+              name="wishes"
+              placeholder="Чем мы можем вам помочь?"
+              value=""
+            />
+          </label>
         </fieldset>
         <button class="order-form__button classic-button" type="button">
           Заказать
@@ -191,7 +214,7 @@
       <!-- Контакты -->
       <section class="contacts">
         <div class="contacts-container">
-          <h2 class="contacts__title classic-section-titles">
+          <h2 class="contacts__title classic-logo-h2">
             Где забрать <br />
             ягоды?
           </h2>
@@ -258,6 +281,6 @@
         href="https://htmlacademy.ru/intensive/adaptive"
       ></a>
     </footer>
-    <script href="./js/script.js" defer></script>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>
