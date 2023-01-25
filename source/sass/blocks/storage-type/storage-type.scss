@@ -11,6 +11,31 @@
 .storage-type__description {
   max-width: 100%;
   max-height: 100%;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  gap: 12px;
+  display: inline-flex;
 }
+// Скрыл настоящий чекбокс
+.storage-type__check {
+  appearance: none;
+  position:  absolute;
+ }
+.storange-type__check + label {
+  cursor: pointer;
+}
+// Кастомный чекбокс
+.storage-type__checkbox {
+  border: 2px solid #0F805D;
+  border-radius: 5px;
+  width: 19px;
+  height: 19px;
+  order: -1;
+  }
+  // Чекнутый
+  .storage-type__check:checked + .storage-type__checkbox {
+  background-image: url("../../../img/svg/galka.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+

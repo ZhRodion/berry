@@ -51,3 +51,23 @@ button {
   line-height: 1.11;
   color: #0f805d;
 }
+
+// Кнопка общая
+.classic-button {
+min-width: 264px;
+min-height: 56px;
+color: #FBFCFE;
+background: #6A107A;
+border-radius: 40px;
+letter-spacing: 0.05em;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.15;
+@media (min-width: $tablet-width) {
+  min-width: 336px;
+  min-height: 68px;
+}
+@media (min-width: $desktop-width) {
+
+}
+}
