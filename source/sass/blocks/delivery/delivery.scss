@@ -4,6 +4,10 @@
   padding: 0;
   margin: 0;
   border: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
 }
 .delivery__check {
   max-width: 100%;
@@ -11,4 +15,27 @@
   padding: 0;
   margin: 0;
   border: 0;
+  gap: 12px;
+  display: inline-flex;
+  cursor: pointer;
 }
+// Скрытый
+.delivery__adress {
+  appearance: none;
+  position:  absolute;
+ }
+// Кастомный чекбокс
+.delivery__radio {
+  border: 2px solid #0F805D;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  order: -1;
+}
+// Чекнутый
+.delivery__adress:checked + .delivery__radio {
+  background-image: url("../../../img/svg/circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
