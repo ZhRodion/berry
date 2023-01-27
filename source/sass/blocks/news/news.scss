@@ -9,8 +9,11 @@ margin-top: 100px;
 }
 
 .news__lead-text {
-  padding: 96px 0 0 0;
+  padding: 64px 0 0 0;
   display: block;
+  @media (min-width: $tablet-width) {
+    padding: 72px 0 0 0;
+  }
 }
 
 .news__leaf {

@@ -30,7 +30,7 @@ box-shadow: 4px 2px -2px rgb(88 13 101 / 25%);
   }
   }
   // Текст логотипа
-  .main-nav__brend-text {
+  .main-nav__brand-text {
    display: none;
    @media (min-width: $tablet-width) {
     max-width: 100%;
@@ -44,9 +44,6 @@ box-shadow: 4px 2px -2px rgb(88 13 101 / 25%);
     color: #0F805D;
     margin: 0;
     float: left;
-    // position: absolute;
-    // top: 27px;
-    // left: 110px;
     @media (min-width: $desktop-width) {
 
     }
@@ -58,9 +55,11 @@ box-shadow: 4px 2px -2px rgb(88 13 101 / 25%);
     display: flex;
     align-items: center;
     @media (min-width: $tablet-width) {
+      width: 33.33%;
       gap: 8px;
     }
   @media (min-width: $desktop-width) {
+    width: 33.333%;
     padding: 0;
     display: flex;
     gap: 8px;

@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0 26px 0 26px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
   @media (min-width: $tablet-width) {
     padding: 0 72px 0 72px;
     display: grid;
@@ -25,13 +27,14 @@
 
 .order-form__button {
   margin: 32px 0 0 0;
+  align-self: center;
   @media (min-width: $tablet-width) {
     display: grid;
     align-items: center;
     justify-self: center;
   }
   @media (min-width: $desktop-width) {
-    margin: 32px 0 0;
+    margin: 48px 0 0;
     display: grid;
     align-items: center;
     justify-self: center;

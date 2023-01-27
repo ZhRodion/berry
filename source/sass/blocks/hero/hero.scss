@@ -3,6 +3,7 @@
   max-width: 100%;
   min-height: 640px;
   padding: 0 27px 0 27px;
+  background-color: #FBF9F9;
   background-image: url("../../../img/background/index-bg/mobile-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,7 +80,6 @@ font-weight: 400;
 font-size: 20px;
 line-height: 23px;
 color: #FBFCFE;
-align-self: flex-start;
 cursor: pointer;
 background-color: #6A107A;
   @media (min-width: $tablet-width) {
@@ -92,6 +92,7 @@ font-size: 28px;
 line-height: 1.17;
 color: #FBFCFE;
 background-color:#6A107A;
+align-self: flex-start;
   }
   @media (min-width: $desktop-width) {
     min-width: 336px;

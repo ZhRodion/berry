@@ -3,11 +3,12 @@
   min-height: 116px;
   padding: 0 26px 0 26px;
   margin: 68px 0 0 0;
-  display: flex;
   background: #F1F6FC;
   @media (min-width: $tablet-width) {
     margin: 100px 0 0 0;
     padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
   }
   @media (min-width: $desktop-width) {
     margin: 100px 0 0 0;
@@ -16,5 +17,43 @@
   }
 }
 .page-footer__logo {
-  padding: 11px 0 0 0;
+  padding: 0;
+}
+.page-footer__brand-text {
+  display: none;
+  @media (min-width: $tablet-width) {
+   display: block;
+   font-family: 'Amatic SC';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 1.25;
+   color: #0F805D;
+   margin: 0;
+   float: left;
+}
+}
+.page-footer__berry-logo{
+height: 100%;
+margin-top: 11px;
+float: left;
+display: flex;
+@media (min-width: $tablet-width) {
+  margin: 0;
+  float: none;
+}
+}
+.page-footer__academy-logo-link {
+  width: 50%;
+  height: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  cursor: pointer;
+  @media (min-width: $tablet-width) {
+    width: 33.333%;
+    margin: 0;
+    float: none;
+  }
 }

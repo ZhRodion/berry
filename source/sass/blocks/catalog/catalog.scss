@@ -12,5 +12,8 @@ padding: 0 94px 0 94px;
 .catalog__title {
 margin: 0;
 display: inline-block;
-padding-top: 40px;
+padding: 0;
+@media (min-width: $tablet-width) {
+  margin: 100px 0 0 0;
+}
 }
