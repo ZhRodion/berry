@@ -5,6 +5,10 @@
   flex-direction: column;
   align-items: center;
   padding: 0;
+  margin: 64px 0 0 0;
+  @media (min-width: $tablet-width) {
+    margin: 100px 0 0 0;
+  }
   @media (min-width: $desktop-width) {
     padding: 0 156px 0 156px;
     flex-direction: row;
@@ -15,12 +19,14 @@
 }
 .contacts__title {
 padding: 0;
-margin: 182px 0 0 0;
-@media (max-width: $mobile-width-only) {
-  margin-top: 214px;
+margin: 0;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 72px 0 0 0;
   }
   @media (min-width: $desktop-width) {
-    margin-top: 266px;
+    margin: 130px 0 0 0;
+    padding: 0;
   }
 }
 .contacts__subtitle {
@@ -32,11 +38,13 @@ margin: 182px 0 0 0;
   max-height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 @media (max-width: $mobile-width-only) {
 padding: 0 26px 0 26px;
 }
 @media (min-width: $tablet-width) {
   padding: 0;
+  margin: 0;
   }
 @media (min-width: $desktop-width) {
 max-width: 100%;
@@ -47,4 +55,17 @@ flex-direction: column;
 align-items: center;
 width: 50%;
 }
+}
+
+.contacts__leaf {
+  width: 228px;
+  height: 32px;
+  @media (min-width: $tablet-width) {
+  width: 296px;
+  height: 42px;
+  }
+  @media (min-width: $desktop-width) {
+    position: relative;
+    right: 62%;
+  }
 }
