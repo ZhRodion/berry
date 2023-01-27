@@ -57,6 +57,10 @@ color: #0F805D;
   display: flex;
   justify-content: center;
   gap: 12px;
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 1.16;
+  }
 }
 // Кнопка каталога
 .product-cards__button {

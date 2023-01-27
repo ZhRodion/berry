@@ -13,9 +13,10 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: start;
+    margin: 0;
   }
   @media (min-width: $desktop-width) {
-
+    margin: 0;
   }
 }
 .delivery__check {

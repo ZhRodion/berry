@@ -56,5 +56,21 @@ padding: 0;
   min-width: 100%;
   min-height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 32px 0 0 0;
+  @media (min-width: $tablet-width) {
+    padding: 48px 0 0 0;
+  }
+  }
+  .headline__leaf {
+width: 228px;
+height: 32px;
+margin: 35px 0 0 0;
+@media (min-width: $tablet-width) {
+width: 296px;
+height: 42px;
+margin-top: 35px;
+}
+@media (min-width: $tablet-width) {
+ margin-top: 46px;
+  }
   }

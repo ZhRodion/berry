@@ -7,21 +7,34 @@
   text-align: left;
   @media (min-width: $tablet-width) {
     padding: 0 72px 0 72px;
+    display: grid;
   }
     @media (min-width: $desktop-width) {
       padding: 0 300px 0 349px;
-
   }
 }
 .order-form__title {
-  margin: 32px 0 32px 0;
+  margin: 50px 0 32px 0;
+  @media (min-width: $tablet-width) {
+    margin: 50px 0 32px 0;
+  }
+  @media (min-width: $desktop-width) {
+    margin: 57px 0 32px 0;
+  }
 }
 
 .order-form__button {
   margin: 32px 0 0 0;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    align-items: center;
+    justify-self: center;
+  }
   @media (min-width: $desktop-width) {
-    position: relative;
-    left: 25%;
+    margin: 32px 0 0;
+    display: grid;
+    align-items: center;
+    justify-self: center;
   }
 }
 

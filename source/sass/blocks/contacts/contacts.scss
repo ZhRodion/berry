@@ -32,6 +32,10 @@ margin: 0;
 .contacts__subtitle {
   margin: 0;
   padding: 64px 0 0 0;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 .contacts-container {
   max-width: 100%;
@@ -60,9 +64,11 @@ width: 50%;
 .contacts__leaf {
   width: 228px;
   height: 32px;
+  padding: 0 0 60px 0;
   @media (min-width: $tablet-width) {
   width: 296px;
   height: 42px;
+  padding: 0;
   }
   @media (min-width: $desktop-width) {
     position: relative;

@@ -54,12 +54,17 @@
             Мы соберем для вас ягоды и доставим их в удобном для вас виде -
             свежими или замороженными
           </p>
+          <img
+            class="headline__leaf"
+            src="./img/svg/content-icons/line-leaf.svg"
+            alt=""
+          />
         </div>
       </section>
       <!-- Форма заказа -->
       <section class="order-form">
         <h2 class="visually-hidden">Выбор ягод</h2>
-        <h3 class="order-form__title classic-logo-h3">Выберите ягоды</h3>
+        <h3 class="order-form__title classic-title-h3">Выберите ягоды</h3>
         <!-- Выбор ягоды (чекбоксы) -->
         <fieldset class="choose-berry">
           <label class="choose-berry__description">
@@ -114,7 +119,7 @@
           </label>
         </fieldset>
         <!-- Выбор вида хранения -->
-        <h3 class="order-form__title classic-logo-h3">Вид хранения</h3>
+        <h3 class="order-form__title classic-title-h3">Вид хранения</h3>
         <fieldset class="storage-type">
           <label class="storage-type__description">
             <input class="storage-type__check" type="checkbox" /> свежие ягоды
@@ -131,7 +136,7 @@
           </label>
         </fieldset>
         <!-- Выбор доставки (радиокнопки)-->
-        <h3 class="order-form__title classic-logo-h3">Способ доставки</h3>
+        <h3 class="order-form__title classic-title-h3">Способ доставки</h3>
         <fieldset class="delivery">
           <label class="delivery__check">
             <input class="delivery__adress" type="radio" checked /> Доставка
@@ -150,7 +155,7 @@
         </fieldset>
         <!-- Контакты покупателя -->
         <fieldset class="your-contacts">
-          <h3 class="your-contacts__title classic-logo classic-logo-h3">
+          <h3 class="your-contacts__title classic-logo classic-title-h3">
             Ваши контакты
           </h3>
           <div class="user-data-field">
@@ -227,7 +232,7 @@
             src="./img/svg/content-icons/line-leaf.svg"
             alt=""
           />
-          <h2 class="contacts__title classic-logo-h2">
+          <h2 class="contacts__title classic-title-h2">
             Где забрать <br />
             ягоды?
           </h2>
@@ -236,17 +241,36 @@
           </p>
           <ul class="contacts-info">
             <li class="contacts-info__item">
+              <img
+                class="contacts-info__icon"
+                src="./img/svg/content-icons/icon-leaf-black.svg"
+                alt=""
+              />
               <p class="contacts-info__adress">
                 Набережная Обводного канала, 101
               </p>
             </li>
             <li class="contacts-info__item">
+              <img
+                class="contacts-info__icon"
+                src="./img/svg/content-icons/icon-call-black.svg"
+                alt=""
+              />
               <a class="contacts-info__phone" href="tel:+79105244118"
                 >+ 7 910 524 41 18</a
               >
             </li>
             <li class="contacts-info__item">
-              <a class="contacts-info__mail" href="mailto:info@yagoda.ru"
+              <p class="contacts-info__email-icon-container">
+                <img
+                  class="contacts-info__icon email-icon"
+                  src="./img/svg/content-icons/mail-icon-black.svg"
+                  alt=""
+                />
+              </p>
+              <a
+                class="contacts-info__mail email-icon"
+                href="mailto:info@yagoda.ru"
                 >info@yagoda.ru</a
               >
             </li>
@@ -256,8 +280,8 @@
         <div class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.132520538084!2d30.329035316388882!3d59.91334798186702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTAwMTM!5e0!3m2!1sru!2sge!4v1674477268450!5m2!1sru!2sge"
-            width="100%"
-            height="100%"
+            width="600"
+            height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"

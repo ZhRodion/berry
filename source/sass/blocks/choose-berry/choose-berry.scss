@@ -6,12 +6,11 @@
   margin: 0;
   border: 0;
   text-align: start;
-  gap: 23px;
+  gap: 32px;
   @media (max-width: $mobile-width-only) {
     min-width: 100%;
     min-height: 100%;
     padding: 0;
-    margin: 0;
     border: 0;
     display: grid;
     text-align: start;
@@ -22,7 +21,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-
   }
   @media (min-width: $desktop-width) {
   display: grid;
