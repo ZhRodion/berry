@@ -9,7 +9,8 @@
     padding: 0 156px 0 156px;
     flex-direction: row;
     align-items: flex-end;
-    gap: calc(10% + 5px);
+    gap: 120px;
+    justify-content: center;
   }
 }
 .contacts__title {
@@ -44,5 +45,6 @@ order: 1;
 display: flex;
 flex-direction: column;
 align-items: center;
+width: 50%;
 }
 }

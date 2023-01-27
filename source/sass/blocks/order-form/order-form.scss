@@ -4,8 +4,13 @@
   max-height: 100%;
   margin: 0;
   padding: 0 26px 0 26px;
+  text-align: left;
   @media (min-width: $tablet-width) {
     padding: 0 72px 0 72px;
+  }
+    @media (min-width: $desktop-width) {
+      padding: 0 300px 0 349px;
+
   }
 }
 .order-form__title {
@@ -14,4 +19,13 @@
 
 .order-form__button {
   margin: 32px 0 0 0;
+  @media (min-width: $desktop-width) {
+    position: relative;
+    left: 25%;
+  }
+}
+
+// Отключение переносов 1440px
+.delivery__transfer {
+display: none;
 }

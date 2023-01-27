@@ -4,4 +4,126 @@
   padding: 0;
   margin: 0;
   border: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 36px;
+  text-align: left;
+  @media (min-width: $tablet-width) {
+  }
+  @media (min-width: $desktop-width) {
+    width: 80%
+  }
+}
+.your-contacts__title {
+  margin: 32px 0 0 0;
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+// Общие стили полей
+.user-data-field {
+  display: grid;
+  row-gap: 36px;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 36px;
+  }
+  @media (min-width: $desktop-width) {
+
+  }
+}
+// Первое поле
+.contacts-first-element {
+  @media (min-width: $tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+// Второе
+.contacts-second-element {
+  @media (min-width: $tablet-width) {
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+}
+// Третье
+.contacts-third-element {
+  @media (min-width: $tablet-width) {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  }
+}
+// Четвертое
+.contacts-fourth-element {
+  @media (min-width: $tablet-width) {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+}
+// Пятое
+.contacts-fifth-element {
+  @media (min-width: $tablet-width) {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+}
+
+// поле ввода
+.your-contacts__user-data {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 16px 12px;
+  margin: 0;
+  border: 0;
+  border: 1px solid #0F805D;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.your-contacts__desc {
+max-width: 100%;
+max-height: 100%;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+// Поле адреса
+.adress-data {
+max-width: 100%;
+// min-height: 88px;
+@media (max-width: $mobile-width-only) {
+  height: 44px;
+}
+@media (min-width: $tablet-width) {
+  max-width: 100%;
+  max-height: 15px;
+}
+@media (min-width: $desktop-width) {
+
+}
+}
+.adress-data::placeholder {
+  @media (max-width: $mobile-width-only) {
+    transform: translateY(-32.5px);
+  }
+}
+// Пожелания
+.wishes-data {
+  min-height: 124px;
+}
+.wishes-data::placeholder {
+  transform: translateY(-52.5px);
 }

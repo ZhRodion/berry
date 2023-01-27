@@ -9,6 +9,14 @@
   justify-content: center;
   text-align: start;
   gap: 33px;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  @media (min-width: $desktop-width) {
+
+  }
 }
 .delivery__check {
   max-width: 100%;

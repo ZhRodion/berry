@@ -5,12 +5,30 @@
   padding: 0;
   margin: 0;
   border: 0;
-  display: flex;
-  flex-direction: column;
-  // flex-wrap: wrap;
-  justify-content: center;
   text-align: start;
   gap: 23px;
+  @media (max-width: $mobile-width-only) {
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    display: grid;
+    text-align: start;
+    gap: 23px;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+  }
+  @media (min-width: $desktop-width) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  }
 }
 // Скрытый
 .choose-berry__check {
