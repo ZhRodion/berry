@@ -100,6 +100,7 @@ display: flex;
 flex-direction: column;
 gap: 4px;
 }
+
 // Поле адреса
 .adress-data {
 max-width: 100%;
@@ -117,7 +118,7 @@ max-width: 100%;
 }
 .adress-data::placeholder {
   @media (max-width: $mobile-width-only) {
-    transform: translateY(-32.5px);
+    transform: translateY(-15.5px);
   }
 }
 // Пожелания
@@ -127,3 +128,4 @@ max-width: 100%;
 .wishes-data::placeholder {
   transform: translateY(-52.5px);
 }
+
