@@ -117,3 +117,25 @@ line-height: 1.15;
 
 }
 }
+// Фиолетовая кнопка состояния
+.violet-button {
+  cursor: pointer;
+  &:hover {
+    background-color: #B22EC8;
+  }
+
+  &:active {
+    background: rgba(106, 16, 122, 0.6);
+  }
+}
+// Состояния ссылок
+.link {
+  &:hover {
+    color: #7BDB0A;
+  }
+  &:active {
+color:#0F805D;
+opacity: 50%;
+  }
+}
+

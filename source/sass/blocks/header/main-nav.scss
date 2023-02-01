@@ -3,7 +3,6 @@
   min-height: 100%;
   display: block;
 background-color: #F1F6FC;
-box-shadow: 4px 2px -2px rgb(88 13 101 / 25%);
  @media (min-width: $tablet-width) {
   display: flex;
   align-items: center;
@@ -54,6 +53,10 @@ box-shadow: 4px 2px -2px rgb(88 13 101 / 25%);
     max-width: 100%;
     display: flex;
     align-items: center;
+    @media (max-width: $mobile-width-only) {
+      width: 50%;
+      float: left;
+    }
     @media (min-width: $tablet-width) {
       width: 33.33%;
       gap: 8px;
@@ -96,7 +99,7 @@ top: 15px;
 right: 7.5px;
 bottom: 15px;
 left: 7.5px;
-box-shadow: 0 5px 0 0#0f805d, 0 15px 0 0#0f805d, 0 25px 0 0 #0F805D;
+box-shadow: 0 5px 0 0#0f805d, 0 15px 0 0#0f805d, 0 25px 0 0#0f805d;
 border-radius: 25px;
 }
 

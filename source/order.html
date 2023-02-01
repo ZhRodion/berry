@@ -27,16 +27,16 @@
         <div class="main-nav__wrapper">
           <ul class="nav-list nav-list--closed">
             <li class="nav-list__item">
-              <a class="main-nav__link" href="#catalog">Каталог</a>
+              <a class="main-nav__link link" href="#catalog">Каталог</a>
             </li>
             <li class="nav-list__item">
-              <a class="main-nav__link" href="#news">Новости</a>
+              <a class="main-nav__link link" href="#news">Новости</a>
             </li>
             <li class="nav-list__item">
-              <a class="main-nav__link" href="#contacts">Контакты</a>
+              <a class="main-nav__link link" href="#contacts">Контакты</a>
             </li>
             <li class="nav-list__item">
-              <a class="main-nav__link" href="./order.html">Заказать</a>
+              <a class="main-nav__link link" href="./order.html">Заказать</a>
             </li>
           </ul>
         </div>
@@ -139,14 +139,21 @@
         <h3 class="order-form__title classic-title-h3">Способ доставки</h3>
         <fieldset class="delivery">
           <label class="delivery__check">
-            <input class="delivery__adress" type="radio" checked /> Доставка
+            <input
+              class="delivery__adress"
+              type="radio"
+              name="delivery"
+              checked
+            />
+            Доставка
             <br />
             (по СПБ в пределах <br class="delivery__transfer" />
             КАД)
             <span class="delivery__radio"></span>
           </label>
           <label class="delivery__check">
-            <input class="delivery__adress" type="radio" /> Самовывоз
+            <input class="delivery__adress" type="radio" name="delivery" />
+            Самовывоз
             <br />
             (Набережная Обводного <br class="delivery__transfer" />
             канала, 101)
@@ -161,7 +168,7 @@
           <div class="user-data-field">
             <!-- Имя -->
             <label class="your-contacts__desc contacts-first-element"
-              >Имя *
+              >Имя
               <input
                 class="your-contacts__user-data"
                 type="text"
@@ -173,7 +180,7 @@
             </label>
             <!-- Телефон -->
             <label class="your-contacts__desc contacts-second-element"
-              >Телефон *
+              >Телефон
               <input
                 class="your-contacts__user-data"
                 type="tel"
@@ -185,7 +192,7 @@
             </label>
             <!-- Email -->
             <label class="your-contacts__desc contacts-third-element"
-              >Email *
+              >Email
               <input
                 class="your-contacts__user-data"
                 type="text"
@@ -197,7 +204,7 @@
             </label>
             <!-- Адрес -->
             <label class="your-contacts__desc contacts-fourth-element"
-              >Адрес *
+              >Адрес
               <input
                 class="your-contacts__user-data adress-data"
                 type="text"
@@ -220,7 +227,10 @@
             </label>
           </div>
         </fieldset>
-        <button class="order-form__button classic-button" type="button">
+        <button
+          class="order-form__button classic-button violet-button"
+          type="submit"
+        >
           Заказать
         </button>
       </section>

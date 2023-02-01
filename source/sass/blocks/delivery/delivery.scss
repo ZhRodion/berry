@@ -27,25 +27,37 @@
   border: 0;
   gap: 12px;
   display: inline-flex;
+  align-items: center;
   cursor: pointer;
 }
 // Скрытый
 .delivery__adress {
   appearance: none;
   position:  absolute;
+  margin: 0;
  }
 // Кастомный чекбокс
 .delivery__radio {
-  border: 2px solid #0F805D;
-  border-radius: 100%;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
+  border: solid 2px #0F805D;
+  border-radius: 50px;
+  cursor: pointer;
+  content: '';
   order: -1;
+  position: relative;
 }
-// Чекнутый
-.delivery__adress:checked + .delivery__radio {
-  background-image: url("../../../img/svg/circle.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.delivery__radio::before {
+  content: '';
+  width: 9px;
+  height: 9px;
+  background-color: #0F805D;
+  border-radius: 50px;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  display: none;
 }
-
+.delivery__adress:checked + .delivery__radio::before {
+  display: block;
+}
