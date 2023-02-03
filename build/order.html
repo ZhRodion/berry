@@ -9,199 +9,382 @@
   <body class="page">
     <!-- Хэдер -->
     <header class="header">
-      <img class="header__logo" src="#" alt="логотип доставки ягод." />
       <nav class="main-nav">
+        <div class="logo-group">
+          <a class="main-nav__logo-link" href="/">
+            <img
+              class="main-nav__logo classic-logo"
+              src="./img/svg/logos/Logo.svg"
+              alt="логотип ягоды."
+            />
+          </a>
+          <a class="main-nav__brand-text" href="/">Ягода</a>
+        </div>
         <!-- Кнопка открыть/закрыть меню -->
-        <button class="main-nav__menu-button" type="button">
-          <svg aria-hidden="true" focusable="false"></svg>
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Закрыть меню / Открыть меню.</span>
+          <div class="burger-button">
+            <span class="burger-button__strip"></span>
+            <span class="burger-button__strip"></span>
+            <span class="burger-button__strip"></span>
+          </div>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="nav-list">
+          <ul class="nav-list nav-list--closed">
             <li class="nav-list__item">
-              <a class="main-nav__link" href="#">Каталог</a>
+              <a class="main-nav__link link" href="#catalog">Каталог</a>
             </li>
             <li class="nav-list__item">
-              <a class="main-nav__link" href="#">Новости</a>
+              <a class="main-nav__link link" href="#news">Новости</a>
             </li>
             <li class="nav-list__item">
-              <a class="main-nav__link" href="#">Контакты</a>
+              <a class="main-nav__link link" href="#contacts">Контакты</a>
             </li>
             <li class="nav-list__item">
-              <a class="main-nav__link" href="#">Заказать</a>
+              <a class="main-nav__link link" href="./order.html">Заказать</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <!-- Hero v2 -->
       <section class="headline">
-        <h1 class="headline__title">Закажи ягоды</h1>
-        <p class="headline__subtitle">
-          Мы соберем для вас ягоды и доставим их в удобном для вас виде -
-          свежими или замороженными
-        </p>
+        <div class="headline-background">
+          <p class="visually-hidden">hidden</p>
+        </div>
+        <div class="headline-text">
+          <h1 class="headline__title classic-logo-h1">Закажи ягоды</h1>
+          <p class="headline__subtitle">
+            Мы соберем для вас ягоды и доставим их в удобном для вас виде -
+            свежими или замороженными
+          </p>
+          <img
+            class="headline__leaf"
+            src="./img/svg/content-icons/line-leaf.svg"
+            alt="декоративная веточка."
+          />
+        </div>
       </section>
       <!-- Форма заказа -->
       <section class="order-form">
         <h2 class="visually-hidden">Выбор ягод</h2>
-        <h3 class="order-form__title">Выберите ягоды</h3>
+        <h3 class="order-form__title classic-title-h3">Выберите ягоды</h3>
         <!-- Выбор ягоды (чекбоксы) -->
         <fieldset class="choose-berry">
-          <p class="choose-berry__description">
-            <input class="choose-berry__check" type="checkbox" /> брусника
-          </p>
-          <p class="choose-berry__description">
-            <input class="choose-berry__check" type="checkbox" /> крыжовник
-          </p>
-          <p class="choose-berry__description">
-            <input class="choose-berry__check" type="checkbox" /> вишня
-          </p>
-          <p class="choose-berry__description">
-            <input class="choose-berry__check" type="checkbox" /> малина
-          </p>
-          <p class="choose-berry__description">
-            <input class="choose-berry__check" type="checkbox" /> голубика
-          </p>
-          <p class="choose-berry__description">
-            <input class="choose-berry__check" type="checkbox" /> морошка
-          </p>
-          <p class="choose-berry__description">
-            <input class="choose-berry__check" type="checkbox" /> ежевика
-          </p>
-          <p class="choose-berry__description">
-            <input class="choose-berry__check" type="checkbox" /> черника
-          </p>
-          <p class="choose-berry__description">
-            <input class="choose-berry__check" type="checkbox" /> клубника
-          </p>
-          <p class="choose-berry__description">
-            <input class="choose-berry__check" type="checkbox" /> клюква
-          </p>
+          <label class="choose-berry__description">
+            <input class="choose-berry__check" type="checkbox" />
+            <span class="choose-berry__checkbox"></span>
+            брусника
+          </label>
+          <label class="choose-berry__description">
+            <input class="choose-berry__check" type="checkbox" />
+            <span class="choose-berry__checkbox"></span>
+            вишня
+          </label>
+          <label class="choose-berry__description">
+            <input class="choose-berry__check" type="checkbox" />
+            <span class="choose-berry__checkbox"></span>
+            голубика
+          </label>
+          <label class="choose-berry__description">
+            <input class="choose-berry__check" type="checkbox" />
+            <span class="choose-berry__checkbox"></span>
+            ежевика
+          </label>
+          <label class="choose-berry__description">
+            <input class="choose-berry__check" type="checkbox" />
+            <span class="choose-berry__checkbox"></span>
+            клубника
+          </label>
+          <label class="choose-berry__description">
+            <input class="choose-berry__check" type="checkbox" />
+            <span class="choose-berry__checkbox"></span>
+            клюква
+          </label>
+          <label class="choose-berry__description">
+            <input class="choose-berry__check" type="checkbox" />
+            <span class="choose-berry__checkbox"></span>
+            крыжовник
+          </label>
+          <label class="choose-berry__description">
+            <input class="choose-berry__check" type="checkbox" />
+            <span class="choose-berry__checkbox"></span>
+            малина
+          </label>
+          <label class="choose-berry__description">
+            <input class="choose-berry__check" type="checkbox" disabled />
+            <span class="choose-berry__checkbox"></span>
+            морошка
+          </label>
+          <label class="choose-berry__description">
+            <input class="choose-berry__check" type="checkbox" disabled />
+            <span class="choose-berry__checkbox"></span>
+            черника
+          </label>
         </fieldset>
         <!-- Выбор вида хранения -->
+        <h3 class="order-form__title classic-title-h3">Вид хранения</h3>
         <fieldset class="storage-type">
-          <p class="storage-type__description">
+          <label class="storage-type__description">
             <input class="storage-type__check" type="checkbox" /> свежие ягоды
-          </p>
-          <p class="storage-type__description">
-            <input class="storage-type__check" type="checkbox" /> замороденые
+            <span class="storage-type__checkbox"></span>
+          </label>
+          <label class="storage-type__description">
+            <input class="storage-type__check" type="checkbox" /> замороженые
             ягоды
-          </p>
-          <p class="storage-type__description">
+            <span class="storage-type__checkbox"></span>
+          </label>
+          <label class="storage-type__description">
             <input class="storage-type__check" type="checkbox" /> ягодные миксы
-          </p>
+            <span class="storage-type__checkbox"></span>
+          </label>
         </fieldset>
         <!-- Выбор доставки (радиокнопки)-->
+        <h3 class="order-form__title classic-title-h3">Способ доставки</h3>
         <fieldset class="delivery">
-          <p class="delivery__check">
-            <input class="delivery__adress" type="radio" checked /> Доставка (по
-            СПБ в пределах КАД)
-          </p>
-          <p class="delivery__check">
-            <input class="delivery__adress" type="radio" /> Самовывоз
-            (Набережная Обводного канала, 101)
-          </p>
+          <label class="delivery__check">
+            <input
+              class="delivery__real-radio"
+              type="radio"
+              name="delivery"
+              checked
+            />
+            Доставка
+            <br />
+            (по СПБ в пределах <br class="delivery__transfer" />
+            КАД)
+            <span class="delivery__radio-custom"></span>
+          </label>
+          <label class="delivery__check">
+            <input class="delivery__real-radio" type="radio" name="delivery" />
+            Самовывоз
+            <br />
+            (Набережная Обводного <br class="delivery__transfer" />
+            канала, 101)
+            <span class="delivery__radio-custom"></span>
+          </label>
         </fieldset>
         <!-- Контакты покупателя -->
         <fieldset class="your-contacts">
-          <!-- Имя -->
-          <label class="your-contacts__desc">Имя *</label>
-          <input
-            type="text"
-            name="username"
-            placeholder="Как к вам обращаться?"
-            value=""
-            required
-          />
-          <!-- Телефон -->
-          <label class="your-contacts__desc">Телефон *</label>
-          <input
-            type="tel"
-            name="tel"
-            placeholder="+7 ххх ххх хх хх"
-            value=""
-            required
-          />
-          <!-- Email -->
-          <label class="your-contacts__desc">Email *</label>
-          <input
-            type="text"
-            name="email"
-            placeholder="Ваш email"
-            value=""
-            required
-          />
-          <!-- Адрес -->
-          <label class="your-contacts__desc">Адрес *</label>
-          <input
-            type="text"
-            name="adress"
-            placeholder="Адрес в Санкт-Петербурге"
-            value=""
-            required
-          />
-          <!-- Пожелания -->
-          <label class="your-contacts__desc">Пожелания к заказу</label>
-          <input
-            type="text"
-            name="wishes"
-            placeholder="Чем мы можем вам помочь?"
-            value=""
-          />
+          <h3 class="your-contacts__title classic-logo classic-title-h3">
+            Ваши контакты
+          </h3>
+          <div class="user-data-field">
+            <!-- Имя -->
+            <label class="your-contacts__desc contacts-first-element"
+              >Имя
+              <input
+                class="your-contacts__user-data"
+                type="text"
+                name="username"
+                placeholder="Как к вам обращаться?"
+                value=""
+                required
+              />
+            </label>
+            <!-- Телефон -->
+            <label class="your-contacts__desc contacts-second-element"
+              >Телефон
+              <input
+                class="your-contacts__user-data"
+                type="tel"
+                name="tel"
+                placeholder="+7 ххх ххх хх хх"
+                value=""
+                required
+              />
+            </label>
+            <!-- Email -->
+            <label class="your-contacts__desc contacts-third-element"
+              >Email
+              <input
+                class="your-contacts__user-data"
+                type="text"
+                name="email"
+                placeholder="Ваш email"
+                value=""
+                required
+              />
+            </label>
+            <!-- Адрес -->
+            <label class="your-contacts__desc contacts-fourth-element"
+              >Адрес
+              <input
+                class="your-contacts__user-data adress-data"
+                type="text"
+                name="adress"
+                placeholder="Адрес в Санкт-Петербурге"
+                value=""
+                required
+              />
+            </label>
+            <!-- Пожелания -->
+            <label class="your-contacts__desc contacts-fifth-element"
+              >Пожелания к заказу
+              <input
+                class="your-contacts__user-data wishes-data"
+                type="text"
+                name="wishes"
+                placeholder="Чем мы можем вам помочь?"
+                value=""
+              />
+            </label>
+          </div>
         </fieldset>
+        <button
+          class="order-form__button classic-button violet-button"
+          type="submit"
+        >
+          Заказать
+        </button>
       </section>
       <!-- Контакты -->
       <section class="contacts">
-        <h2 class="contacts__title">Где забрать ягоды?</h2>
-        <p class="contacts__subtitle">
-          Забери ягоды с нашего склада по адресу:
-        </p>
-        <ul class="contacts-info">
-          <li class="contacts-info__item">
-            <p class="contacts-info__adress">
-              Набережная Обводного канала, 101
-            </p>
-          </li>
-          <li class="contacts-info__item">
-            <a class="contacts-info__phone" href="tel:+79105244118"
-              >+ 7 910 524 41 18</a
-            >
-          </li>
-          <li class="contacts-info__item">
-            <a class="contacts-info__mail" href="mailto:info@yagoda.ru"
-              >info@yagoda.ru</a
-            >
-          </li>
-        </ul>
-        <button class="contacts__button" type="button">Заказать</button>
+        <div class="contacts-container">
+          <img
+            class="contacts__leaf"
+            src="./img/svg/content-icons/line-leaf.svg"
+            alt="декоративная веточка."
+          />
+          <h2 class="contacts__title classic-title-h2">
+            Где забрать <br />
+            ягоды?
+          </h2>
+          <p class="contacts__subtitle">
+            Забери ягоды с нашего склада по адресу:
+          </p>
+          <ul class="contacts-info">
+            <li class="contacts-info__item">
+              <img
+                class="contacts-info__icon"
+                src="./img/svg/content-icons/icon-leaf-black.svg"
+                alt="листок черный."
+              />
+              <p class="contacts-info__adress">
+                Набережная Обводного канала, 101
+              </p>
+            </li>
+            <li class="contacts-info__item">
+              <img
+                class="contacts-info__icon"
+                src="./img/svg/content-icons/icon-call-black.svg"
+                alt="телефон черный."
+              />
+              <a class="contacts-info__phone" href="tel:+79105244118"
+                >+ 7 910 524 41 18</a
+              >
+            </li>
+            <li class="contacts-info__item">
+              <p class="contacts-info__email-icon-container">
+                <img
+                  class="contacts-info__icon email-icon"
+                  src="./img/svg/content-icons/mail-icon-black.svg"
+                  alt="конверт черный."
+                />
+              </p>
+              <a
+                class="contacts-info__mail email-icon"
+                href="mailto:info@yagoda.ru"
+                >info@yagoda.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Карта -->
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.132520538084!2d30.329035316388882!3d59.91334798186702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTAwMTM!5e0!3m2!1sru!2sge!4v1674477268450!5m2!1sru!2sge"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
-      <!-- Карта -->
-      <div class="map"></div>
     </main>
     <!-- Футер -->
     <footer class="page-footer">
       <!-- Логотип ягоды -->
-      <a class="page-footer__berry-logo" href="/"></a>
+      <div class="logo-group">
+        <a class="page-footer__berry-logo" href="/">
+          <img
+            class="page-footer__logo classic-logo"
+            src="./img/svg/logos/Logo.svg"
+            alt="логотип ягоды."
+          />
+        </a>
+        <a class="page-footer__brand-text" href="/">Ягода</a>
+      </div>
       <!-- Соц. сети -->
       <ul class="social-media-list">
         <li class="social-media-list__item">
-          <a class="social-media-list__link" href="#"></a>
+          <a class="social-media-list__link" href="https://t.me/s/htmlacademy"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="none"
+              aria-labelledby="telegram"
+            >
+              <title id="telegram">Наш телеграм</title>
+              <circle cx="20" cy="20" r="19.5" stroke="#0F805D" />
+              <path
+                fill="#0F805D"
+                d="M28.945 9.765a1.552 1.552 0 0 0-1.572-.244L9.456 16.754a1.543 1.543 0 0 0 .078 2.884L13.4 20.98l2.095 6.926c.004.014.017.023.023.036a.488.488 0 0 0 .319.293c.01.004.017.013.027.015h.006l.003.001a.449.449 0 0 0 .233-.012c.008-.002.016-.002.025-.005a.496.496 0 0 0 .191-.122c.006-.007.016-.008.022-.014l3.013-3.326 4.397 3.405c.267.21.596.322.935.322.734 0 1.367-.514 1.518-1.23l3.262-16.019a1.533 1.533 0 0 0-.524-1.486v.001Zm-12.357 12.53-.707 3.437-1.475-4.878 7.315-3.81-4.997 4.998a.498.498 0 0 0-.136.253Zm8.639 4.772a.54.54 0 0 1-.347.4.525.525 0 0 1-.514-.079L19.603 23.7a.5.5 0 0 0-.676.06l-2.097 2.31.706-3.427 7.189-7.19a.5.5 0 0 0-.584-.797l-10.363 5.398-3.917-1.362A.527.527 0 0 1 9.5 18.2a.532.532 0 0 1 .334-.518l17.914-7.233a.536.536 0 0 1 .558.086.523.523 0 0 1 .182.518l-3.261 16.015Z"
+              /></svg
+          ></a>
         </li>
         <li class="social-media-list__item">
-          <a class="social-media-list__link" href="#"></a>
+          <a class="social-media-list__link" href="https://vk.com/htmlacademy"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="none"
+              aria-labelledby="vk"
+            >
+              <title id="vk">Наша группа в ВК</title>
+              <circle cx="20" cy="20" r="19.5" stroke="#0F805D" />
+              <path
+                fill="#0F805D"
+                d="M9 15.926c0-.704.439-1.084 1.316-1.139l3.381.02c.227 0 .378.104.454.311.348 1.036.737 1.93 1.168 2.682a32.6 32.6 0 0 0 1.69 2.6c.061.124.16.186.296.186a.28.28 0 0 0 .25-.145l.067-.228.023-3.583c0-.248-.064-.414-.193-.497-.128-.083-.367-.145-.715-.186-.272-.042-.408-.193-.408-.456 0-.055.008-.096.023-.124.317-.898 1.225-1.346 2.723-1.346l1.27-.021c.575 0 1.052.131 1.43.393.378.263.567.677.567 1.243v4.701a.55.55 0 0 0 .295.104c.227 0 .424-.124.59-.373 1.664-2.126 2.564-3.548 2.7-4.266a.34.34 0 0 1 .046-.104c.105-.207.28-.386.521-.538.242-.152.454-.256.636-.31a.487.487 0 0 1 .204-.042h3.517l.227.02c.303 0 .537.132.703.394a.74.74 0 0 1 .125.27c.023.096.038.192.046.29l.011.165v.145c-.106.566-.374 1.17-.806 1.812-.43.642-.979 1.336-1.645 2.081-.665.746-1.081 1.236-1.248 1.47-.136.166-.204.318-.204.456 0 .11.06.235.182.373l3.313 3.81c.181.222.272.463.272.726 0 .317-.136.58-.409.787a1.788 1.788 0 0 1-.975.352l-.386.02h-3.449a.756.756 0 0 0-.09.01.763.763 0 0 1-.092.011c-.332 0-.642-.131-.93-.393-.106-.11-.817-.925-2.133-2.444a1.167 1.167 0 0 0-.317-.27c-.061.221-.14.539-.239.953-.098.414-.17.711-.215.89l-.068.353c-.152.483-.47.773-.953.87l-.318.02h-2.224c-1.255 0-2.507-.524-3.755-1.574-1.248-1.049-2.371-2.405-3.37-4.07-.998-1.663-1.928-3.6-2.79-5.808A1.532 1.532 0 0 1 9 15.926Zm13.637 5.364c-.318 0-.605-.08-.862-.238-.257-.159-.386-.377-.386-.653v-4.763c0-.276-.075-.473-.227-.59-.151-.117-.416-.176-.794-.176l-1.293.041c-.65 0-1.142.104-1.475.31.665.29.998.76.998 1.41v3.644a1.22 1.22 0 0 1-.454.86 1.38 1.38 0 0 1-.907.341c-.454 0-.802-.2-1.044-.6-1.18-1.63-2.057-3.176-2.632-4.64l-.204-.538-3.018-.02c-.197 0-.307.01-.33.03-.022.021-.033.08-.033.177 0 .124.015.255.045.393l.477 1.16c1.27 2.996 2.65 5.357 4.14 7.083 1.49 1.726 2.954 2.588 4.391 2.588h2.27c.09 0 .158-.024.204-.072.045-.048.083-.142.113-.28l.045-.207.431-1.822c.122-.249.227-.414.318-.497a.846.846 0 0 1 .59-.228c.363 0 .734.2 1.112.6l1.929 2.237c.12.18.25.27.385.27h3.744c.454 0 .681-.104.681-.311a.375.375 0 0 0-.068-.207l-3.29-3.749c-.257-.29-.386-.6-.386-.932 0-.331.121-.649.363-.952.197-.277.579-.736 1.146-1.378a31.187 31.187 0 0 0 1.486-1.801c.424-.56.704-1.067.84-1.523l.068-.269a.295.295 0 0 1-.023-.134.458.458 0 0 0-.022-.156h-3.563a1.235 1.235 0 0 0-.544.373l-.137.393c-.378.953-1.369 2.424-2.972 4.412a1.642 1.642 0 0 1-1.112.414Z"
+              /></svg
+          ></a>
         </li>
         <li class="social-media-list__item">
-          <a class="social-media-list__link" href="#"></a>
+          <a
+            class="social-media-list__link"
+            href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="none"
+              aria-labelledby="youtube"
+            >
+              <title id="youtube">Наш ютуб канал</title>
+              <circle cx="20" cy="20" r="19.5" stroke="#0F805D" />
+              <path
+                fill="#0F805D"
+                d="m23.206 19.69-4.5-3a.375.375 0 0 0-.581.31v6a.365.365 0 0 0 .197.328.42.42 0 0 0 .178.047.337.337 0 0 0 .206-.066l4.5-3a.366.366 0 0 0 0-.618Zm-4.331 2.607v-4.594L22.325 20l-3.45 2.297Zm10.734-7.66a1.913 1.913 0 0 0-1.134-1.274c-3.169-1.22-8.26-1.2-8.475-1.2-.216 0-5.306-.02-8.475 1.2a1.913 1.913 0 0 0-1.134 1.275c-.235.909-.516 2.578-.516 5.362 0 2.785.281 4.453.516 5.363a1.914 1.914 0 0 0 1.134 1.275c3.169 1.218 8.26 1.2 8.475 1.2h.066c.646 0 5.4-.038 8.409-1.2a1.914 1.914 0 0 0 1.134-1.275c.235-.91.516-2.578.516-5.363 0-2.784-.281-4.453-.516-5.362Zm-.73 10.538a1.123 1.123 0 0 1-.676.76c-3.037 1.171-8.147 1.153-8.203 1.153-.056 0-5.166.018-8.203-1.154a1.124 1.124 0 0 1-.675-.759c-.225-.872-.497-2.475-.497-5.175 0-2.7.272-4.303.497-5.175a1.124 1.124 0 0 1 .675-.76c3.037-1.171 8.147-1.152 8.203-1.152.056 0 5.166-.02 8.203 1.153a1.125 1.125 0 0 1 .675.76c.225.871.497 2.474.497 5.174s-.272 4.303-.497 5.175Z"
+              /></svg
+          ></a>
         </li>
       </ul>
       <!-- Логотип академии -->
       <a
-        class="page-footer__academy-logo"
-        src="https://htmlacademy.ru/intensive/adaptive"
-      ></a>
+        class="page-footer__academy-logo-link"
+        href="https://htmlacademy.ru/intensive/adaptive"
+        ><img
+          class="page-footer__academy-logo"
+          src="./img/svg/logos/academy.svg"
+          alt="Логотип академии."
+        />
+      </a>
     </footer>
-    <script href="./js/script.js" defer></script>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>
