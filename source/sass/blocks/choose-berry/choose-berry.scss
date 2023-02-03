@@ -73,5 +73,10 @@ border: 2px solid #7BDB0A;
 &:active {
   border: 2px solid #0F805D;
 }
+:disabled {
+  border: 2px solid rgba(142, 152, 146, 0.7);
 }
-
+}
+.choose-berry__check:disabled + .choose-berry__checkbox {
+  border: 2px solid rgba(142, 152, 146, 0.7);
+}

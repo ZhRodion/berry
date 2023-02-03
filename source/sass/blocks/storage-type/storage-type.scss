@@ -25,6 +25,7 @@
   padding: 0;
   gap: 12px;
   display: inline-flex;
+  cursor: pointer;
 }
 // Скрыл настоящий чекбокс
 .storage-type__check {
@@ -48,4 +49,18 @@
   background-repeat: no-repeat;
   background-position: center;
   }
-
+  .storage-type__check:checked + .storage-type__checkbox:hover {
+    background-image: url("../../../img/svg/content-icons/checkbox/hover-galka.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  }
+// Сосотояния
+.storage-type__checkbox {
+  &:hover {
+  border: 2px solid #7BDB0A;
+  }
+  &:active {
+    border: 2px solid #0F805D;
+  }
+  }

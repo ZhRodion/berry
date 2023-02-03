@@ -32,6 +32,7 @@
     top: 30px;
 }
 .burger-button.burger-button--opened span:nth-child(1) {
+  width: 55px;
     top: 25px;
     transform: rotate(135deg);
 }
@@ -40,6 +41,7 @@
     left: -60px;
 }
 .burger-button.burger-button--opened span:nth-child(3) {
+  width: 55px;
     top: 25px;
     transform: rotate(-135deg);
 }

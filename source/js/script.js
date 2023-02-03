@@ -11,14 +11,12 @@ if (navList.classList.contains('nav-list--closed')) {
   navList.classList.add('nav-list--closed');
   navList.classList.remove('nav-list--opened');
 }
-})
-burgButton.addEventListener('click', function () {
-  if (burgButton.classList.contains('burger-button--closed')) {
-burgButton.classList.remove('burger-button--closed');
-burgButton.classList.add('burger-button--opened');
-  }
-  else {
-  burgButton.classList.add('burger-button--closed');
-  burgButton.classList.remove('burger-button--opened')
-  }
+if (burgButton.classList.contains('burger-button--closed')) {
+  burgButton.classList.remove('burger-button--closed');
+  burgButton.classList.add('burger-button--opened');
+    }
+    else {
+    burgButton.classList.add('burger-button--closed');
+    burgButton.classList.remove('burger-button--opened')
+    }
 })
