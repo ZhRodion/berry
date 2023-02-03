@@ -1,2 +1,2 @@
 
-# Gulp сборка: html, sass.
+# html, sass.
