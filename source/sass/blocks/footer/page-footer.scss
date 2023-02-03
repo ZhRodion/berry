@@ -31,7 +31,14 @@
    color: #0F805D;
    margin: 0;
    float: left;
-}
+   &:hover {
+    color: #7BDB0A;
+      }
+      &:active {
+      color: #0F805D;
+      opacity: 50%;
+      }
+       }
 }
 .page-footer__berry-logo{
 height: 100%;

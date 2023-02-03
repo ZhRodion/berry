@@ -23,6 +23,11 @@
         <!-- Кнопка открыть/закрыть меню -->
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Закрыть меню / Открыть меню.</span>
+          <div class="burger-button">
+            <span class="burger-button__strip"></span>
+            <span class="burger-button__strip"></span>
+            <span class="burger-button__strip"></span>
+          </div>
         </button>
         <div class="main-nav__wrapper">
           <ul class="nav-list nav-list--closed">
@@ -108,12 +113,12 @@
             малина
           </label>
           <label class="choose-berry__description">
-            <input class="choose-berry__check" type="checkbox" />
+            <input class="choose-berry__check" type="checkbox" disabled />
             <span class="choose-berry__checkbox"></span>
             морошка
           </label>
           <label class="choose-berry__description">
-            <input class="choose-berry__check" type="checkbox" />
+            <input class="choose-berry__check" type="checkbox" disabled />
             <span class="choose-berry__checkbox"></span>
             черника
           </label>
@@ -140,7 +145,7 @@
         <fieldset class="delivery">
           <label class="delivery__check">
             <input
-              class="delivery__adress"
+              class="delivery__real-radio"
               type="radio"
               name="delivery"
               checked
@@ -149,15 +154,15 @@
             <br />
             (по СПБ в пределах <br class="delivery__transfer" />
             КАД)
-            <span class="delivery__radio"></span>
+            <span class="delivery__radio-custom"></span>
           </label>
           <label class="delivery__check">
-            <input class="delivery__adress" type="radio" name="delivery" />
+            <input class="delivery__real-radio" type="radio" name="delivery" />
             Самовывоз
             <br />
             (Набережная Обводного <br class="delivery__transfer" />
             канала, 101)
-            <span class="delivery__radio"></span>
+            <span class="delivery__radio-custom"></span>
           </label>
         </fieldset>
         <!-- Контакты покупателя -->

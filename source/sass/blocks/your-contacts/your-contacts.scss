@@ -130,4 +130,22 @@ max-width: 100%;
 .wishes-data::placeholder {
   transform: translateY(-52.5px);
 }
+// Состояния элементов input
+.your-contacts input{
+  &:default {
+    border-color: #0F805D;
+  }
+  &:hover {
+   border-color: #7BDB0A;
+  }
+  &:active {
+    border-color: #7BDB0A;
+  }
+  // &:invalid {
+  //   border-color: #FF8282;
+  // }
+  &:disabled {
+    border-color: #8E9892 70%;
+  }
+}
 

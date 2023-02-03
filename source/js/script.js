@@ -1,9 +1,7 @@
 /* в этот файл добавляет скрипты*/
-// let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 let navList = document.querySelector('.nav-list');
-
-// navMain.classList.remove('main-nav--nojs');
+let burgButton = document.querySelector('.burger-button');
 
 navToggle.addEventListener('click', function () {
 if (navList.classList.contains('nav-list--closed')) {
@@ -14,12 +12,13 @@ if (navList.classList.contains('nav-list--closed')) {
   navList.classList.remove('nav-list--opened');
 }
 })
-// navToggle.addEventListener('click', function () {
-//   if (burgClosd.classList.contains('main-nav__toggle--closed')) {
-//     navList.classList.remove('main-nav__toggle--closed');
-//     navList.classList.add('main-nav__toggle--opened');
-//   } else {
-//     navList.classList.add('main-nav__toggle--closed');
-//     navList.classList.remove('main-nav__toggle--opened');
-//   }
-//   })
+burgButton.addEventListener('click', function () {
+  if (burgButton.classList.contains('burger-button--closed')) {
+burgButton.classList.remove('burger-button--closed');
+burgButton.classList.add('burger-button--opened');
+  }
+  else {
+  burgButton.classList.add('burger-button--closed');
+  burgButton.classList.remove('burger-button--opened')
+  }
+})

@@ -31,33 +31,38 @@
   cursor: pointer;
 }
 // Скрытый
-.delivery__adress {
+.delivery__real-radio {
   appearance: none;
   position:  absolute;
   margin: 0;
+
  }
-// Кастомный чекбокс
-.delivery__radio {
-  width: 15px;
-  height: 15px;
-  border: solid 2px #0F805D;
-  border-radius: 50px;
-  cursor: pointer;
-  content: '';
+ .delivery__radio-custom {
+  border: 2px solid #0F805D;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
   order: -1;
   position: relative;
-}
-.delivery__radio::before {
-  content: '';
-  width: 9px;
-  height: 9px;
-  background-color: #0F805D;
-  border-radius: 50px;
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  display: none;
-}
-.delivery__adress:checked + .delivery__radio::before {
-  display: block;
-}
+  flex-shrink: 0;
+  &:hover {
+    border: 2px solid #7BDB0A;
+
+  }
+  }
+  // Чекнутый
+  input:checked ~ .delivery__radio-custom::before {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background-color: #0F805D;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+  }
+  .delivery__radio-custom::before:hover {
+    background-color: #7BDB0A;
+    }
+

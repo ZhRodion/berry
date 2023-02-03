@@ -43,9 +43,13 @@ background-color: #F1F6FC;
     color: #0F805D;
     margin: 0;
     float: left;
-    @media (min-width: $desktop-width) {
-
-    }
+  &:hover {
+color: #7BDB0A;
+  }
+  &:active {
+  color: #0F805D;
+  opacity: 50%;
+  }
    }
   }
   // Логотип + текс расположение
@@ -93,14 +97,7 @@ background-color: #F1F6FC;
 .main-nav__toggle::before {
 content: "";
 width: 45px;
-height: 5px;
-position: absolute;
-top: 15px;
-right: 7.5px;
-bottom: 15px;
-left: 7.5px;
-box-shadow: 0 5px 0 0#0f805d, 0 15px 0 0#0f805d, 0 25px 0 0#0f805d;
-border-radius: 25px;
+height: 5px
 }
 
 // Меню
