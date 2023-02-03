@@ -20,6 +20,9 @@
   @media (min-width: $desktop-width) {
 padding: 0;
   }
+  @media (min-width: 1700px) {
+    width: 52%;
+  }
 }
 
 .advantages-list__item {
