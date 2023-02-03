@@ -35,6 +35,9 @@
    }
    .nav-list--closed {
     display: none;
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
    }
   }
 

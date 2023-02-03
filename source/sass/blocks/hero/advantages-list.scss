@@ -1,5 +1,5 @@
 .advantages-list {
-  max-width: 100%;
+  width: 80%;
   min-height: 164px;
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
   flex-direction: column;
   gap: 12px;
   @media (min-width: $tablet-width) {
-    max-width: 100%;
+    width: 100%;
     min-height: 146px;
     padding: 0;
     margin: 0;
