@@ -4,8 +4,13 @@
   padding: 0;
   margin: 0;
   border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: start;
   gap: 36px;
   text-align: left;
@@ -28,12 +33,17 @@
 }
 // Общие стили полей
 .user-data-field {
+  display: -ms-grid;
   display: grid;
   row-gap: 36px;
   @media (min-width: $tablet-width) {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 24px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
     row-gap: 36px;
   }
   @media (min-width: $desktop-width) {
@@ -43,41 +53,49 @@
 // Первое поле
 .contacts-first-element {
   @media (min-width: $tablet-width) {
-    grid-column-start: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
     grid-column-end: 1;
   }
 }
 // Второе
 .contacts-second-element {
   @media (min-width: $tablet-width) {
-  grid-row-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
   grid-row-end: 2;
 }
 }
 // Третье
 .contacts-third-element {
   @media (min-width: $tablet-width) {
-  grid-row-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
   grid-row-end: 2;
-  grid-column-start: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   grid-column-end: 2;
   }
 }
 // Четвертое
 .contacts-fourth-element {
   @media (min-width: $tablet-width) {
-    grid-row-start: 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
     grid-row-end: 3;
-    grid-column-start: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
     grid-column-end: 3;
 }
 }
 // Пятое
 .contacts-fifth-element {
   @media (min-width: $tablet-width) {
-    grid-row-start: 4;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
     grid-row-end: 4;
-    grid-column-start: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
     grid-column-end: 3;
 }
 }
@@ -98,8 +116,13 @@ max-width: 100%;
 max-height: 100%;
 padding: 0;
 margin: 0;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: column;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 gap: 4px;
 }
 
@@ -118,17 +141,45 @@ max-width: 100%;
 
 }
 }
-.adress-data::placeholder {
+.adress-data::-webkit-input-placeholder {
+  @media (max-width: $mobile-width-only) {
+    -webkit-transform: translateY(-15.5px);
+            transform: translateY(-15.5px);
+  }
+}
+.adress-data::-moz-placeholder {
   @media (max-width: $mobile-width-only) {
     transform: translateY(-15.5px);
+  }
+}
+.adress-data:-ms-input-placeholder {
+  @media (max-width: $mobile-width-only) {
+    transform: translateY(-15.5px);
+  }
+}
+.adress-data::placeholder {
+  @media (max-width: $mobile-width-only) {
+    -webkit-transform: translateY(-15.5px);
+            transform: translateY(-15.5px);
   }
 }
 // Пожелания
 .wishes-data {
   min-height: 124px;
 }
-.wishes-data::placeholder {
+.wishes-data::-webkit-input-placeholder {
+  -webkit-transform: translateY(-52.5px);
+          transform: translateY(-52.5px);
+}
+.wishes-data::-moz-placeholder {
   transform: translateY(-52.5px);
+}
+.wishes-data:-ms-input-placeholder {
+  transform: translateY(-52.5px);
+}
+.wishes-data::placeholder {
+  -webkit-transform: translateY(-52.5px);
+          transform: translateY(-52.5px);
 }
 // Состояния элементов input
 .your-contacts input{
@@ -141,9 +192,6 @@ max-width: 100%;
   &:active {
     border-color: #7BDB0A;
   }
-  // &:invalid {
-  //   border-color: #FF8282;
-  // }
   &:disabled {
     border-color: #8E9892 70%;
   }

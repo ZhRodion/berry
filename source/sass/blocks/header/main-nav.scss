@@ -4,15 +4,27 @@
   display: block;
 background-color: #F1F6FC;
  @media (min-width: $tablet-width) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: calc(15% + 5px);
 }
 @media (min-width: $desktop-width) {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 }
 // Logo
@@ -55,8 +67,12 @@ color: #7BDB0A;
   // Логотип + текс расположение
   .logo-group {
     max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     @media (max-width: $mobile-width-only) {
       width: 50%;
       float: left;
@@ -68,9 +84,13 @@ color: #7BDB0A;
   @media (min-width: $desktop-width) {
     width: 33.333%;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 8px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 // Кнопка меню
@@ -104,8 +124,13 @@ height: 5px
 .main-nav__wrapper {
 max-width: 100%;
 min-height: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: column;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
 font-size: 20px;
 line-height: 23px;
 @media (min-width: $tablet-width) {
@@ -121,6 +146,8 @@ line-height: 23px;
 margin: 0;
 padding: 0;
 @media (min-width: $tablet-width){
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 }

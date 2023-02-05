@@ -4,20 +4,41 @@
   height: 100%;
   padding: 0;
   margin: 65px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 24px;
   @media (min-width: 600px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   @media (min-width: $tablet-width) {
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 gap: 20px;
   }
   @media (min-width: $desktop-width) {
@@ -31,9 +52,16 @@ padding: 20px;
 background-color: #FBFCFE;
 border: 2px solid #0F805D;
 border-radius: 40px;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: column;
-align-items: center;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 gap: 20px;
 @media (min-width: $tablet-width) {
   max-width: 39%;
@@ -63,8 +91,12 @@ font-weight: 400;
 font-size: 20px;
 line-height: 1.15;
 color: #000000;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-align-items: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 @media (min-width: $tablet-width) {
   min-height: 100px;
   padding: 0 4px 0 4px;

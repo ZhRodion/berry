@@ -5,10 +5,16 @@
   margin: 0;
   padding: 0 26px 0 26px;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   @media (min-width: $tablet-width) {
     padding: 0 72px 0 72px;
+    display: -ms-grid;
     display: grid;
   }
     @media (min-width: $desktop-width) {
@@ -27,16 +33,24 @@
 
 .order-form__button {
   margin: 32px 0 0 0;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   @media (min-width: $tablet-width) {
+    display: -ms-grid;
     display: grid;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     justify-self: center;
   }
   @media (min-width: $desktop-width) {
     margin: 48px 0 0;
+    display: -ms-grid;
     display: grid;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     justify-self: center;
   }
 }

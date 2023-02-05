@@ -4,19 +4,35 @@
   height: 100%;
   margin: 64px 0 0 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 24px;
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
     gap: 52px;
   }
   @media (min-width: $desktop-width) {
-    column-gap: 24px;
+    -webkit-column-gap: 24px;
+       -moz-column-gap: 24px;
+            column-gap: 24px;
     row-gap: 52px;
   }
 }
@@ -26,7 +42,8 @@ max-width: 264px;
 max-height: 432px;
 background: #FBFCFE;
 border-radius: 40px;
-filter: drop-shadow(0px 4px 4px rgba(88, 13, 101, 0.15));
+-webkit-filter: drop-shadow(0px 4px 4px rgba(88, 13, 101, 0.15));
+        filter: drop-shadow(0px 4px 4px rgba(88, 13, 101, 0.15));
 @media (min-width: $desktop-width) {
   width: 22.5%;
 }
@@ -56,8 +73,12 @@ color: #0F805D;
   max-width: 100%;
   min-height: 20px;
   padding-top: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 12px;
   @media (min-width: $tablet-width) {
     font-size: 18px;

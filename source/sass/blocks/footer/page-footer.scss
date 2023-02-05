@@ -7,13 +7,19 @@
   @media (min-width: $tablet-width) {
     margin: 100px 0 0 0;
     padding: 0 20px 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   @media (min-width: $desktop-width) {
     margin: 100px 0 0 0;
     padding: 0 156px 0 156px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .page-footer__logo {
@@ -44,6 +50,8 @@
 height: 100%;
 margin-top: 11px;
 float: left;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
 @media (min-width: $tablet-width) {
   margin: 0;
@@ -54,8 +62,12 @@ display: flex;
   width: 50%;
   height: 100%;
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   float: right;
   cursor: pointer;
   @media (min-width: $tablet-width) {
@@ -64,3 +76,4 @@ display: flex;
     float: none;
   }
 }
+

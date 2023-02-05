@@ -2,7 +2,9 @@
   // Скрытое меню
   @media (min-width: $tablet-width) {
     gap: 16px;
-    justify-content: center
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center
   }
   @media (min-width: $desktop-width) {
     padding: 0;

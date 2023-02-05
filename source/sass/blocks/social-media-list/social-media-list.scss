@@ -1,56 +1,64 @@
 .social-media-list {
-max-width: 100%;
-max-height: 100%;
-padding: 0;
-margin: 0;
-display: flex;
-gap: 20px;
-align-self: end;
-justify-content: flex-end;
-@media (min-width: $tablet-width) {
-  width: 33.333%;
+  max-width: 100%;
   max-height: 100%;
+  padding: 0;
   margin: 0;
-  float: none;
-  justify-content: center;
-  margin: 0 0 28px 0;
-}
-@media (min-width: $desktop-width) {
-gap: 32px;
-}
-}
-.social-media-list__item {
-  max-width: 50%;
-  max-height: 100%;
-  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-item-align: end;
+      align-self: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   @media (min-width: $tablet-width) {
-   margin: 0;
+    width: 33.333%;
+    max-height: 100%;
+    margin: 0;
+    float: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 28px 0;
   }
-}
-.social-media-list__link {
-width: 100%;
-max-height: 100%;
-padding: 0;
-margin: 0;
-cursor: pointer;
-}
-// Стилизация состояний
-.social-media-list__item {
-  &:hover {
-    stroke: #7BDB0A;
-    fill: none;
-     }
-     &:active {
-     stroke: #0F805D80;
-     fill: none;
-     opacity: 50%;
-     }
+  @media (min-width: $desktop-width) {
+  gap: 32px;
   }
-// Круги
-.social-media-list__item:hover circle {
-stroke: #7BDB0A;
-}
-.social-media-list__item:active circle {
-stroke: #0F805D80;
-opacity: 50%;
-}
+  }
+  .social-media-list__item {
+    max-width: 50%;
+    max-height: 100%;
+    margin-top: 15px;
+    @media (min-width: $tablet-width) {
+     margin: 0;
+    }
+  }
+  .social-media-list__link {
+  width: 100%;
+  max-height: 100%;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  }
+  // Стилизация состояний
+  .social-media-list__item {
+    &:hover {
+      stroke: #7BDB0A;
+      fill: none;
+       }
+       &:active {
+       stroke: #0F805D80;
+       fill: none;
+       opacity: 50%;
+       }
+    }
+  // Круги
+  .social-media-list__item:hover circle {
+  stroke: #7BDB0A;
+  }
+  .social-media-list__item:active circle {
+  stroke: #0F805D80;
+  opacity: 50%;
+  }
+

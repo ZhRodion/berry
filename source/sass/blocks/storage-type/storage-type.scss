@@ -4,17 +4,31 @@
   padding: 0;
   margin: 0;
   border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 23px;
   @media (min-width: $tablet-width) {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   }
     @media (min-width: $desktop-width) {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
       gap: 48px;
   }
 }
@@ -24,12 +38,16 @@
   margin: 0;
   padding: 0;
   gap: 12px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   cursor: pointer;
 }
 // Скрыл настоящий чекбокс
 .storage-type__check {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   position:  absolute;
  }
 .storange-type__check + label {
@@ -41,7 +59,9 @@
   border-radius: 5px;
   width: 19px;
   height: 19px;
-  order: -1;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
   }
   // Чекнутый
   .storage-type__check:checked + .storage-type__checkbox {

@@ -2,8 +2,13 @@
   max-width: 100%;
   max-height: 100%;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 64px;
   padding: 0;
   box-shadow: inset 0px 4px 4px rgba(88, 13, 101, 0.5);
@@ -20,7 +25,7 @@
   background-size: cover;
   background-position: 10% 70%;
   box-shadow: inset 0px 4px 4px rgba(88, 13, 101, 0.5);
-  @media (min-resolution: 2dppx) {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   background-image: url("../../../img/background/order-bg/retina/mobile-ord-bg-retina.jpg");
   background-repeat: no-repeat;
   background-position: 10% 70%;
@@ -30,7 +35,7 @@
     background-image: url("../../../img/background/order-bg/tablet-ord-bg.jpg");
     background-repeat: no-repeat;
     background-position: 25% 25%;
-    @media (min-resolution: 2dppx) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       background-image: url("../../../img/background/order-bg/retina/tablet-ord-bg-retina.jpg");
       background-position: 25% 25%;
     }
@@ -39,7 +44,7 @@
     background-image: url("../../../img/background/order-bg/desktop-ord-bg.jpg");
     background-repeat: no-repeat;
     background-position: 25% 25%;
-    @media (min-resolution: 2dppx) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     background-image: url("../../../img/background/order-bg/retina/desktop-ord-bg-retina.jpg");
     background-repeat: no-repeat;
     background-position: 25% 25%;

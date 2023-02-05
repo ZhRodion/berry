@@ -9,7 +9,7 @@
   background-size: cover;
   background-position: center;
   box-shadow: inset 0px 4px 4px rgba(88, 13, 101, 0.5);
-  @media (min-resolution: 2dppx) {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   background-image: url("../../../img/background/index-bg/retina/mobile-bg-retina.jpg");
   background-repeat: no-repeat;
   }
@@ -18,7 +18,7 @@
     background-repeat: no-repeat;
     max-width: 100%;
     min-height: 924px;
-    @media (min-resolution: 2dppx) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       background-image: url("../../../img/background/index-bg/retina/tablet-bg-retina.jpg");
     }
   }
@@ -28,9 +28,14 @@
     max-width: 100%;
     min-height: 800px;
     padding: 0 350px 0 540px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    @media (min-resolution: 2dppx) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     background-image: url("../../../img/background/index-bg/retina/desktop-bg-retina.jpg");
     background-repeat: no-repeat;
     }
@@ -57,7 +62,10 @@ padding: 0;
 font-size: 48px;
 line-height: 1.12;
 color: #0F805D;
-align-self: flex-start;
+-ms-flex-item-align: start;
+    align-self: flex-start;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
 }
 @media (min-width: $desktop-width) {
@@ -72,7 +80,8 @@ display: flex;
   right: 20px;
 }
 @media (min-width: 1700px) {
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 }
 
@@ -101,7 +110,8 @@ font-size: 28px;
 line-height: 1.17;
 color: #FBFCFE;
 background-color:#6A107A;
-align-self: flex-start;
+-ms-flex-item-align: start;
+    align-self: flex-start;
   }
   @media (min-width: $desktop-width) {
     min-width: 336px;
@@ -124,9 +134,16 @@ align-self: flex-start;
   max-width: 100%;
   min-height: 276px;
   padding: 68px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 32px;
   @media (min-width: $tablet-width) {
     padding: 142px 0 0 0;
@@ -138,11 +155,17 @@ align-self: flex-start;
     width: 100%;
     padding: 172px 0 0 0;
     float: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   @media (min-width: 1700px) {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 // br
