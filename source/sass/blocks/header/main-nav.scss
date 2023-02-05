@@ -3,7 +3,6 @@
   min-height: 100%;
   display: block;
 background-color: #F1F6FC;
-position: -webkit-sticky;
  @media (min-width: $tablet-width) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,12 +113,12 @@ color: #7BDB0A;
     }
 }
 
-//Открытие
-.main-nav__toggle::before {
-content: "";
-width: 45px;
-height: 5px
-}
+// //Открытие
+// .main-nav__toggle::before {
+// content: "";
+// width: 45px;
+// height: 5px
+// }
 
 // Меню
 .main-nav__wrapper {
