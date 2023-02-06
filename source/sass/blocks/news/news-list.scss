@@ -4,6 +4,7 @@
   height: 100%;
   padding: 0;
   margin: 65px 0 0 0;
+  word-break: break-word;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,6 +78,7 @@ gap: 20px;
 // Обнуление стандартных margin у текста
 .news-list__item h3 {
   margin: 0;
+  word-break: break-word;
 }
 .news-list__item p {
   margin: 0;

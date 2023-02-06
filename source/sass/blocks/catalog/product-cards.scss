@@ -67,6 +67,7 @@ color: #0F805D;
 // Обнуление всех margin у <p>
 .product-cards p {
   margin: 0;
+  word-break: break-word;
 }
 // Выравнивание значений
 .price-value {

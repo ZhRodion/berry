@@ -258,6 +258,7 @@ line-height: 1.15;
 // Фиолетовая кнопка состояния
 .violet-button {
   cursor: pointer;
+  word-break: break-word;
   &:hover {
     background-color: #B22EC8;
   }
