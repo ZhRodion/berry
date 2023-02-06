@@ -1,12 +1,15 @@
 .header {
-  max-width: 100%;
+  width: 100%;
   min-height: 68px;
   padding: 0;
   background-color: #F1F6FC;
   color: #000000;
   padding: 0 21px 0 26px;
-  position: relative;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0px 4px 4px rgba(88, 13, 101, 0.25);
   @media (min-width: $tablet-width) {
+    width: 100%;
     padding: 0 26px 0 26px;
   }
   @media (min-width: $desktop-width) {

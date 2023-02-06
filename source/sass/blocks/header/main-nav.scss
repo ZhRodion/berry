@@ -100,7 +100,7 @@ color: #7BDB0A;
   margin: 4px 21px 4px 0;
   position: absolute;
   top: 2%;
-  right: 2%;
+  right: 11%;
   border: 0;
   cursor: pointer;
   background-color: #f1f6fc;
@@ -135,6 +135,7 @@ line-height: 23px;
 @media (min-width: $tablet-width) {
  max-width: 100%;
   min-height: 20px;
+  align-items: flex-start
 }
 @media (min-width: $tablet-width) {
   width: 100%;
